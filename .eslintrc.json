@@ -1,0 +1,17 @@
+{
+  "extends": ["next/core-web-vitals", "prettier"],
+  "rules": {
+    "no-console": "error",
+    "no-alert": "error",
+    "import/prefer-default-export": "error",
+    "prefer-template": "error",
+    "import/extensions": "error",
+    "no-unused-vars": "error",
+    "import/no-dynamic-require": "error",
+    "global-require": "error",
+    "no-constant-condition": "error",
+    "no-restricted-globals": "error",
+    "func-names": "error",
+    "no-underscore-dangle": "error"
+  }
+}
