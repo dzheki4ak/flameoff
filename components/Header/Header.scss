@@ -1,0 +1,37 @@
+.header {
+  width: 100%;
+  height: 704px;
+  background-image: url('../../public/images/header_image.svg');
+  color: #ffffff;
+
+  &__content {
+    display: flex;
+    width: 1121px;
+    height: 100%;
+    margin: auto;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &_text {
+      width: 475px;
+      margin-bottom: 164px;
+    }
+  }
+
+  &__text {
+    &_main {
+      font-size: 42px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+    }
+
+    &_intro {
+      font-size: 22px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      margin: 35px 0 56px;
+    }
+  }
+}
