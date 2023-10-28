@@ -1,10 +1,11 @@
-import styles from './page.scss';
+import Products from '@/components/Products/Products';
+import './page.scss';
 
 export default function Home() {
   return (
     <>
-      <main className={styles.main}>
-        <h1>Wellcome next</h1>
+      <main className="main">
+        <Products/>
       </main>
     </>
   );

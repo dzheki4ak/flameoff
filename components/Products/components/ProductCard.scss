@@ -1,0 +1,7 @@
+.product-card {
+  display: flex;
+
+  &.rtl {
+    flex-direction: row-reverse;
+  }
+}
