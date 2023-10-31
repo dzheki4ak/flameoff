@@ -13,8 +13,9 @@
     justify-content: space-between;
 
     &_text {
-      width: 475px;
-      margin-bottom: 164px;
+      width: 521px;
+      margin: 0 auto 140px;
+      text-align: center;
     }
   }
 
@@ -31,7 +32,7 @@
       font-style: normal;
       font-weight: 400;
       line-height: normal;
-      margin: 35px 0 56px;
+      margin: 16px 0 48px;
     }
   }
 }
