@@ -10,7 +10,7 @@ const ProductCard = ({ header, imageSrc, descrTextPrime, descrTextSec, imgAltTex
       <div className="product-card__details">
         <h3 className="product-card__details_header">{header}</h3>
         <p className="product-card__details_prim-text">{descrTextPrime}</p>
-        <span className="product-card__details_sec-text">{descrTextSec}</span>
+        <p className="product-card__details_sec-text">{descrTextSec}</p>
         <Button text="Read More" />
       </div>
       <Image

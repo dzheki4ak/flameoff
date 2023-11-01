@@ -1,7 +1,34 @@
 .product-card {
   display: flex;
+  gap: 95px;
 
   &.rtl {
     flex-direction: row-reverse;
+  }
+
+  &__details {
+    &_header {
+      font-size: 28px;
+      font-weight: 600;
+    }
+
+    &_prim-text,
+    &_sec-text {
+      font-size: 18px;
+      font-weight: 400;
+    }
+
+    &_prim-text {
+      margin: 32px 0 16px;
+    }
+
+    &_sec-text {
+      margin-bottom: 50px;
+    }
+  }
+
+  &__image {
+    width: 503px;
+    height: 333px;
   }
 }
