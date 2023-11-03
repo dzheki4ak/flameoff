@@ -20,15 +20,17 @@
     &_link {
       font-size: 18px;
       font-weight: 600;
-      color: #4E5D78;
+      color: #4e5d78;
       text-decoration: none;
     }
   }
 }
 
-.studies-link__details {
-  display: flex;
-  padding: 16px 8px;
-  width: 122px;
-  gap: 8px;
+.studies-link {
+  &__details {
+    display: flex;
+    padding: 16px 8px;
+    width: 122px;
+    gap: 8px;
+  }
 }

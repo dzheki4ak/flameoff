@@ -8,7 +8,7 @@ const Studies = () => {
       <h2 className="studies__header section-header">Case Studies</h2>
       <div className="studies__cards">
         {studiesCardDetails.map(info => (
-          <CaseCard key={info.title} {...info}/>
+          <CaseCard key={info.title} {...info} />
         ))}
       </div>
     </section>
