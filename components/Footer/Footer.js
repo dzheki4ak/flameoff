@@ -2,6 +2,9 @@ import Link from 'next/link';
 import FlameOffLogo from '../FlameOffLogo/FlameOffLogo';
 import Navlist from '../NavList/Navlist';
 import navlist from '@/constants/navlist';
+import SocialMedia from './components/SocialMedia/SocialMedia';
+import termsData from '@/constants/termsData';
+
 import './Footer.scss';
 
 const Footer = () => (
@@ -22,6 +25,7 @@ const Footer = () => (
             classNm="foot-cont__navbar_list"
             listData={navlist}
           />
+          <SocialMedia />
         </nav>
 
         <Link
@@ -33,7 +37,23 @@ const Footer = () => (
         </Link>
 
         <div className="foot-cont__features"></div>
-        <div className="foot-cont__terms"></div>
+
+        <div className="foot-cont__terms">
+          <div className="foot-cont__terms_links">
+            {termsData.map(data => (
+              <Link
+                className="foot-cont__terms_links-link"
+                key={data.link}
+                href={data.link}
+              >
+                {data.text}
+              </Link>
+            ))}
+          </div>
+          <p className="foot-cont__terms_copyright">
+            Copyright © 2023 Flame OFF | All Rights Reserved
+          </p>
+        </div>
       </div>
     </section>
   </footer>
