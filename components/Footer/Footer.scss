@@ -58,6 +58,31 @@
         }
       }
 
+      &__features {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 60px;
+
+        &_subscribe {
+          display: flex;
+          flex-direction: column;
+          gap: 24px;
+          p {
+            font-size: 16px;
+            font-weight: 400;
+          }
+        }
+
+        &_app {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          & a {
+            font-size:0;
+          }
+        }
+      }
+
       &__terms {
         display: flex;
         justify-content: space-between;
@@ -80,6 +105,7 @@
         &_copyright {
           color: #e6e6e6;
           opacity: 0.7;
+          text-align: right;
         }
       }
     }
