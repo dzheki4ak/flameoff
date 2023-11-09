@@ -28,13 +28,22 @@ const FormInput = ({
             alt={imgAltTxt}
           />
         )}
-        <input
-          className={`input-area__field_input ${inputBG}`}
-          type={inputType}
-          name={inputName}
-          placeholder={inputPlaceholder}
-          id={inputId | ''}
-        />
+        {inputName === 'message' ? (
+          <textarea
+            className={`input-area__field_input ${inputBG} ${inputName}`}
+            name={inputName}
+            placeholder={inputPlaceholder}
+            id={inputId || ''}
+          ></textarea>
+        ) : (
+          <input
+            className={`input-area__field_input ${inputBG}`}
+            type={inputType}
+            name={inputName}
+            placeholder={inputPlaceholder}
+            id={inputId || ''}
+          />
+        )}
       </div>
     </div>
   );

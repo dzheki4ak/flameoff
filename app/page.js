@@ -3,6 +3,7 @@ import Benefits from '@/components/Benefits/Benefits';
 import About from '@/components/About/About';
 import './page.scss';
 import Studies from '@/components/Studies/Studies';
+import ContactUs from '@/components/Contact/ContactUs';
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
         <Benefits />
         <Studies />
         <About />
+        <ContactUs />
       </main>
     </>
   );

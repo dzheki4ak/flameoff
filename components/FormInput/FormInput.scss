@@ -1,8 +1,11 @@
 .input-area {
   border-radius: 3px;
+  width: 100%;
+
   &.white {
     background: #ffffff;
   }
+
   &__field {
     display: flex;
     padding: 18px;
@@ -14,22 +17,35 @@
     }
 
     &_input {
+      width: 100%;
       outline: none;
       border: none;
+      background: #f3f3f3;
+      font-size: 18px;
+      font-weight: 400;
       &::placeholder {
         color: #354150;
-        font-size: 18px;
         font-weight: 400;
       }
+
       &.white {
-        &::placeholder {
-          font-size: 16px;
-        }
+        background: #ffffff;
+        font-size: 16px;
+        font-weight: 400;
+      }
+      &.message {
+        height: 197px;
+        font-family: inherit;
       }
     }
 
     &.grey {
       background: #f3f3f3;
+      margin-top: 16px;
     }
+  }
+
+  &.grey {
+    margin-bottom: 32px;
   }
 }
