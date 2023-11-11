@@ -1,17 +1,16 @@
 export const productsDet = {
   headerTxt: 'Our Products',
-  infoTxt:
-    'Lorem ipsum dolor sit amet consectetur. Faucibus odio est vitae ut et blandit eget cursus. Leo aliquet elit augue hendrerit turpis suspendisse turpis dui. Porttitor pharetra est suspendisse turpis vitae sagittis sit. At amet convallis massa at lacus ipsum ornare gravida. Metus accumsan pellentesque.',
+  infoTxt: '',
 };
 export const benefitsDet = {
   headerTxt: 'Top Benefits',
   infoTxt:
-    'Lorem ipsum dolor sit amet consectetur. Dictum pulvinar ut eu ut neque. Consectetur amet tincidunt arcu consequat sed ultrices eu mauris. Ipsum nulla id lectus convallis suspendisse mauris. Et leo volutpat elementum egestas fusce cursus egestas. Nunc nulla phasellus sapien rhoncus tellus tempor laoreet tortor urna. Vulputate adipiscing nascetur quis non a sed. Purus purus dolor faucibus nullam ',
+    'FlameOff products manufacture reliable products that significantly improve the fire rating of your construction projects. ',
 };
 export const aboutDet = {
   headerTxt: 'About Us',
   infoTxt:
-    'Lorem ipsum dolor sit amet consectetur. Dictum pulvinar ut eu ut neque. Consectetur amet tincidunt arcu consequat sed ultrices eu mauris. Ipsum nulla id lectus convallis suspendisse mauris. Et leo volutpat elementum egestas fusce cursus egestas. Nunc nulla phasellus sapien rhoncus tellus tempor laoreet tortor urna. Vulputate adipiscing nascetur quis non a sed. Purus purus dolor faucibus nullam ',
+    'FlameOFF Coatings is a United States based company that has been on the market since 2012. As a leading developer in the fire proof paint industry, providing innovative intumescent paint and other fire retardant treatments, our goal is to minimize property destruction and to save lives during fire emergencies.',
 };
 export const contactDet = {
   headerTxt: 'Contact Us',

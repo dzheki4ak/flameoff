@@ -9,12 +9,10 @@ const Header = () => (
       <NavBar />
       <div className="header__content_text header__text">
         <h1 className="header__text_main">
-          Lorem ipsum dolor sit amet consectetur. Nulla.
+          Reputable Fire Protection Coatings
         </h1>
         <p className="header__text_intro">
-          Lorem ipsum dolor sit amet consectetur. Amet non netus
-          aliquet lacus tincidunt sed quam risus. Nisl elit tincidunt
-          fermentum phasellus.
+          Trusted intumescent paint and fire retardant solutions
         </p>
         <Button text="Get a free quote" />
       </div>

@@ -4,7 +4,7 @@ const SectionHeading = ({ headerTxt, infoTxt }) => {
   return (
     <>
       <h2 className="section-header">{headerTxt}</h2>
-      <p className="section-intro">{infoTxt}</p>
+      {infoTxt && <p className="section-intro">{infoTxt}</p>}
     </>
   );
 };

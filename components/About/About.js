@@ -10,22 +10,11 @@ const About = () => {
     <section className="about">
       <SectionHeading {...aboutDet} />
       <div className="about__details">
-        <div className="about__details_info">
-          <p className="about__details_info-text">
-            Lorem ipsum dolor sit amet consectetur. Dictum pulvinar ut
-            eu ut neque. Consectetur amet tincidunt arcu consequat sed
-            ultrices eu mauris. Ipsum nulla id lectus convallis
-            suspendisse mauris. Et leo volutpat elementum egestas
-            fusce cursus egestas.
-          </p>
-          <p className="about__details_info-text">
-            Urna neque mollis ipsum pharetra pulvinar sed. Augue
-            mauris hac tellus suscipit vitae. Congue in eget in nunc
-            magna adipiscing massa turpis dolor. Senectus morbi augue
-            sit elementum odio facilisi elit urna. Amet imperdiet et
-            sit donec. Ultrices commodo et dict
-          </p>
-        </div>
+        <p className="about__details_text">
+          Our goal is to offer aesthetically pleasing and high quality
+          fire safety solutions that will improve the fire rating in
+          your construction projects.
+        </p>
         <Image
           className="about__details_image"
           src={about}
