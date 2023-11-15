@@ -13,7 +13,7 @@ import './ContactUs.scss';
 
 const ContactUs = () => {
   return (
-    <section className="contact-us">
+    <section className="contact-us" id="contact-us">
       <SectionHeading {...contactDet} />
       <form className="contact-us__form">
         <div className="contact-us__form_creds">

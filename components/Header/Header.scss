@@ -6,8 +6,11 @@
 
   &__content {
     display: flex;
-    width: 1121px;
     height: 100%;
+    width: 100%;
+    max-width: 1121px;
+
+
     margin: auto;
     flex-direction: column;
     justify-content: space-between;

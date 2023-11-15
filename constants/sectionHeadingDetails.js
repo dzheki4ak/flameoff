@@ -7,6 +7,12 @@ export const benefitsDet = {
   infoTxt:
     'FlameOff products manufacture reliable products that significantly improve the fire rating of your construction projects. ',
 };
+
+export const industriesDet = {
+  headerTxt: 'Industries We Serve',
+  infoTxt: '',
+};
+
 export const aboutDet = {
   headerTxt: 'About Us',
   infoTxt:
