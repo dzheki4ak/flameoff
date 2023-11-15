@@ -1,11 +1,13 @@
+@import '@/app/variables.scss';
+
 .section-header {
-  text-align: center;
+  text-align: $center-text-align;
   font-size: 38px;
-  font-weight: 600;
-  margin-bottom: 48px;
+  font-weight: $bold-font;
+  margin-bottom: $heading-bottom-margin;
 }
 
 .section-intro {
-  font-size: 18px;
-  font-weight: 400;
+  font-size: $f_s-18;
+  font-weight: $light-font;
 }

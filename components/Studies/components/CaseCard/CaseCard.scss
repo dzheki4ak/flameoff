@@ -1,3 +1,5 @@
+@import '@/app/variables.scss';
+
 .studies-card {
   width: 290px;
   border-radius: 6px;
@@ -7,19 +9,19 @@
     padding: 16px;
 
     &_title {
-      font-size: 22px;
-      font-weight: 600;
+      font-size: $f_s-22;
+      font-weight: $bold-font;
     }
 
     &_text {
-      font-size: 18px;
-      font-weight: 400;
+      font-size: $f_s-18;
+      font-weight: $light-font;
       margin: 16px 0;
     }
 
     &_link {
-      font-size: 18px;
-      font-weight: 600;
+      font-size: $f_s-18;
+      font-weight: $bold-font;
       color: #4e5d78;
       text-decoration: none;
     }
@@ -28,7 +30,7 @@
 
 .studies-link {
   &__details {
-    display: flex;
+    display: $flex-display;
     padding: 16px 8px;
     width: 122px;
     gap: 8px;

@@ -1,12 +1,14 @@
+@import '@/app/variables.scss';
+
 .about {
-  margin-top: 144px;
+  margin-top: $section-top-margin;
 
   &__details {
-    display: flex;
+    display: $flex-display;
     flex-direction: column;
     gap: 40px;
     margin-top: 32px;
-    font-size: 18px;
-    font-weight: 400;
+    font-size: $f_s-18;
+    font-weight: $light-font;
   }
 }

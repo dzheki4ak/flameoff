@@ -1,3 +1,5 @@
+@import '@/app/variables.scss';
+
 .input-area {
   border-radius: 3px;
   width: 100%;
@@ -7,7 +9,7 @@
   }
 
   &__field {
-    display: flex;
+    display: $flex-display;
     padding: 18px;
     gap: 10px;
     border-radius: 3px;
@@ -21,17 +23,17 @@
       outline: none;
       border: none;
       background: #f3f3f3;
-      font-size: 18px;
-      font-weight: 400;
+      font-size: $f_s-18;
+      font-weight: $light-font;
       &::placeholder {
         color: #354150;
-        font-weight: 400;
+        font-weight: $light-font;
       }
 
       &.white {
         background: #ffffff;
-        font-size: 16px;
-        font-weight: 400;
+        font-size: $f_s-16;
+        font-weight: $light-font;
       }
       &.message {
         height: 197px;

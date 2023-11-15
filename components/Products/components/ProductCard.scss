@@ -1,5 +1,7 @@
+@import '@/app/variables.scss';
+
 .product-card {
-  display: flex;
+  display: $flex-display;
   gap: 95px;
 
   &.rtl {
@@ -9,13 +11,13 @@
   &__details {
     &_header {
       font-size: 28px;
-      font-weight: 600;
+      font-weight: $bold-font;
     }
 
     &_prim-text,
     &_sec-text {
-      font-size: 18px;
-      font-weight: 400;
+      font-size: $f_s-18;
+      font-weight: $light-font;
     }
 
     &_prim-text {
@@ -23,7 +25,7 @@
     }
 
     &_sec-text {
-      margin-bottom: 48px;
+      margin-bottom: $heading-bottom-margin;
     }
   }
 

@@ -1,8 +1,10 @@
+@import '@/app/variables.scss';
+
 .industries {
-  margin-top: 144px;
+  margin-top: $section-top-margin;
 
   &__images {
-    display: flex;
+    display: $flex-display;
     gap: 24px;
   }
 }

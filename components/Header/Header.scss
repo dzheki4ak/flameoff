@@ -1,3 +1,5 @@
+@import '@/app/variables.scss';
+
 .header {
   width: 100%;
   height: 704px;
@@ -5,20 +7,19 @@
   color: #ffffff;
 
   &__content {
-    display: flex;
+    display: $flex-display;
     height: 100%;
     width: 100%;
     max-width: 1121px;
 
-
     margin: auto;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: $between-justify;
 
     &_text {
       width: 521px;
       margin: 0 auto 140px;
-      text-align: center;
+      text-align: $center-text-align;
     }
   }
 
@@ -26,14 +27,14 @@
     &_main {
       font-size: 42px;
       font-style: normal;
-      font-weight: 600;
+      font-weight: $bold-font;
       line-height: normal;
     }
 
     &_intro {
-      font-size: 22px;
+      font-size: $f_s-22;
       font-style: normal;
-      font-weight: 400;
+      font-weight: $light-font;
       line-height: normal;
       margin: 16px 0 48px;
     }

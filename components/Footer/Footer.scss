@@ -1,12 +1,14 @@
+@import '@/app/variables.scss';
+
 .footer {
-  margin-top: 144px;
+  margin-top: $section-top-margin;
   color: #ffffff;
 
   &__top {
     background: #445572;
-    display: flex;
+    display: $flex-display;
     flex-direction: column;
-    align-items: center;
+    align-items: $center-item-align;
     padding: 96px 0 104px;
     gap: 40px;
 
@@ -18,8 +20,8 @@
     &_text {
       color: #ffffff;
       font-size: 28px;
-      font-weight: 400;
-      text-align: center;
+      font-weight: $light-font;
+      text-align: $center-text-align;
       width: 577px;
     }
   }
@@ -35,8 +37,8 @@
 
     .foot-cont {
       &__navbar {
-        display: flex;
-        justify-content: space-between;
+        display: $flex-display;
+        justify-content: $between-justify;
         &_list {
           gap: 80px;
           text-transform: uppercase;
@@ -44,13 +46,13 @@
       }
 
       &__email {
-        font-size: 18px;
-        font-weight: 400;
+        font-size: $f_s-18;
+        font-weight: $light-font;
         margin-top: 24px;
         color: #ffffff;
         text-decoration: none;
         display: block;
-        text-align: right;
+        text-align: $right-text-align;
 
         &:hover {
           color: #b40404;
@@ -59,24 +61,24 @@
       }
 
       &__features {
-        display: flex;
-        justify-content: space-between;
+        display: $flex-display;
+        justify-content: $between-justify;
         margin-top: 60px;
 
         &_subscribe {
-          display: flex;
+          display: $flex-display;
           flex-direction: column;
           gap: 24px;
           p {
-            font-size: 16px;
-            font-weight: 400;
+            font-size: $f_s-16;
+            font-weight: $light-font;
           }
         }
 
         &_app {
-          display: flex;
+          display: $flex-display;
           flex-direction: column;
-          justify-content: space-between;
+          justify-content: $between-justify;
           & a {
             font-size: 0;
           }
@@ -84,19 +86,19 @@
       }
 
       &__terms {
-        display: flex;
-        justify-content: space-between;
+        display: $flex-display;
+        justify-content: $between-justify;
         margin-top: 75px;
         padding: 32px 0;
         border-top: 1px solid #f6f6f6;
 
         &_links {
-          display: flex;
+          display: $flex-display;
           gap: 40px;
 
           &-link {
-            font-size: 18px;
-            font-weight: 400;
+            font-size: $f_s-18;
+            font-weight: $light-font;
             color: #f3f3f3;
             text-decoration: none;
           }
@@ -105,7 +107,7 @@
         &_copyright {
           color: #e6e6e6;
           opacity: 0.7;
-          text-align: right;
+          text-align: $right-text-align;
         }
       }
     }

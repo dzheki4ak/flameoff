@@ -1,9 +1,11 @@
+@import '@/app/variables.scss';
+
 .contact-us {
   margin: 144px auto 0;
   width: 750px;
 
   & p {
-    text-align: center;
+    text-align: $center-text-align;
   }
 
   & > button {
@@ -12,14 +14,14 @@
 
   &__form {
     margin-top: 54px;
-    display: flex;
+    display: $flex-display;
     flex-direction: column;
-    align-items: center;
+    align-items: $center-item-align;
     &_creds {
-      display: flex;
+      display: $flex-display;
       width: 100%;
       gap: 30px;
-      justify-content: space-between;
+      justify-content: $between-justify;
     }
   }
 }
