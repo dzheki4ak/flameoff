@@ -1,0 +1,11 @@
+@import '@/app/variables.scss';
+
+.social-media {
+  display: $flex-display;
+  gap: 12px;
+  align-items: $end-item-align;
+
+  &__link {
+    font-size: 0;
+  }
+}

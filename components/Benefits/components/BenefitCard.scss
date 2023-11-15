@@ -1,0 +1,25 @@
+@import '@/app/variables.scss';
+
+.benefit-card {
+  width: 262px;
+  padding: 32px 16px 16px;
+  border-radius: 6px;
+  background: #fff;
+  box-shadow: 0px 3px 15px 0px rgba(78, 93, 120, 0.15);
+
+  &__image {
+    height: 40px;
+    width: 40px;
+  }
+
+  &__title {
+    margin: 16px 0 8px;
+    font-size: $f_s-22;
+    font-weight: $bold-font;
+  }
+
+  &__text {
+    font-size: $f_s-18;
+    font-weight: $light-font;
+  }
+}

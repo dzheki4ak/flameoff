@@ -1,0 +1,11 @@
+@import '@/app/variables.scss';
+
+.benefits {
+  margin-top: $section-top-margin;
+
+  &__details {
+    margin-top: 40px;
+    display: $flex-display;
+    gap: 24px;
+  }
+}

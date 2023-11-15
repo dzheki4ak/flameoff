@@ -1,0 +1,19 @@
+@import '@/app/variables.scss';
+
+.navbar {
+  display: $flex-display;
+  width: 100%;
+  padding-top: 14px;
+
+  &__links {
+    display: $flex-display;
+    width: 100%;
+    justify-content: $between-justify;
+    align-items: $end-item-align;
+    margin-left: 40px;
+
+    &_list {
+      gap: 36px;
+    }
+  }
+}

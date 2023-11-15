@@ -1,0 +1,38 @@
+@import '@/app/variables.scss';
+
+.studies-card {
+  width: 290px;
+  border-radius: 6px;
+  box-shadow: -4px 10px 15px 0px rgba(78, 93, 120, 0.15);
+
+  &__info {
+    padding: 16px;
+
+    &_title {
+      font-size: $f_s-22;
+      font-weight: $bold-font;
+    }
+
+    &_text {
+      font-size: $f_s-18;
+      font-weight: $light-font;
+      margin: 16px 0;
+    }
+
+    &_link {
+      font-size: $f_s-18;
+      font-weight: $bold-font;
+      color: #4e5d78;
+      text-decoration: none;
+    }
+  }
+}
+
+.studies-link {
+  &__details {
+    display: $flex-display;
+    padding: 16px 8px;
+    width: 122px;
+    gap: 8px;
+  }
+}

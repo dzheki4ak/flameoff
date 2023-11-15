@@ -1,0 +1,13 @@
+@import '@/app/variables.scss';
+
+.nav-list {
+  display: $flex-display;
+  align-items: $end-item-align;
+  justify-content: $between-justify;
+  list-style-type: none;
+
+  &__item {
+    font-size: $f_s-18;
+    font-weight: $bold-font;
+  }
+}

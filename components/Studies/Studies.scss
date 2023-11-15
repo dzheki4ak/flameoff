@@ -1,0 +1,14 @@
+@import '@/app/variables.scss';
+
+.studies {
+  margin-top: $section-top-margin;
+
+  &__header {
+    margin-bottom: $heading-bottom-margin;
+  }
+
+  &__cards {
+    display: $flex-display;
+    justify-content: $between-justify;
+  }
+}

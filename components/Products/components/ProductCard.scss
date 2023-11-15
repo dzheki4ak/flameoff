@@ -1,0 +1,36 @@
+@import '@/app/variables.scss';
+
+.product-card {
+  display: $flex-display;
+  gap: 95px;
+
+  &.rtl {
+    flex-direction: row-reverse;
+  }
+
+  &__details {
+    &_header {
+      font-size: 28px;
+      font-weight: $bold-font;
+    }
+
+    &_prim-text,
+    &_sec-text {
+      font-size: $f_s-18;
+      font-weight: $light-font;
+    }
+
+    &_prim-text {
+      margin: 32px 0 16px;
+    }
+
+    &_sec-text {
+      margin-bottom: $heading-bottom-margin;
+    }
+  }
+
+  &__image {
+    width: 548px;
+    height: 355px;
+  }
+}

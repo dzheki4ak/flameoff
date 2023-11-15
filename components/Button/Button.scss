@@ -1,0 +1,16 @@
+@import '@/app/variables.scss';
+
+.button {
+  height: auto;
+  width: auto;
+  padding: 12px 32px;
+  border-radius: 3px;
+  border: none;
+  background: #b40404;
+  box-shadow: none;
+  color: #ffffff;
+  font-weight: $bold-font;
+  font-size: $f_s-16;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}

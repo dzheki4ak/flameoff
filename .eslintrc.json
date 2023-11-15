@@ -5,7 +5,6 @@
     "no-alert": "error",
     "import/prefer-default-export": "error",
     "prefer-template": "error",
-    "import/extensions": "error",
     "no-unused-vars": "error",
     "import/no-dynamic-require": "error",
     "global-require": "error",
