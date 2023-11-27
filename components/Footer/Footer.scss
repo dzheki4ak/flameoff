@@ -69,6 +69,7 @@
           display: $flex-display;
           flex-direction: column;
           gap: 24px;
+          justify-content: end;
           p {
             font-size: $f_s-16;
             font-weight: $light-font;
@@ -79,8 +80,23 @@
           display: $flex-display;
           flex-direction: column;
           justify-content: $between-justify;
+          gap: 16px;
           & a {
             font-size: 0;
+          }
+
+          .app-link {
+            
+
+            &__text {
+              font-size: $f_s-16;
+              font-weight: $light-font;
+            }
+
+            &__icon {
+              width: 180px;
+              height: 52px;
+            }
           }
         }
       }

@@ -6,6 +6,7 @@ import navlist from '@/constants/navlist';
 import SocialMedia from './components/SocialMedia/SocialMedia';
 import termsData from '@/constants/termsData';
 import GooglePlay from '@/public/images/googleplay.svg';
+import AppStore from '@/public/images/appstore.svg';
 import Subscribe from './components/Subscribe/Subscribe';
 import './Footer.scss';
 
@@ -39,17 +40,28 @@ const Footer = () => (
         </Link>
 
         <div className="foot-cont__features">
+          <div className="foot-cont__features_app app-link">
+            <p className="app-link__text">FLAMEOFF ESTIMATOR</p>
+            <Link href="#">
+              <Image
+                className="app-link__icon"
+                src={GooglePlay}
+                alt="google play icon"
+              />
+            </Link>
+            <Link href="#">
+              <Image
+                className="app-link__icon"
+                src={AppStore}
+                alt="app store icon"
+              />
+            </Link>
+          </div>
           <div className="foot-cont__features_subscribe">
             <p>
               Get our latest news, product updates and special offers!
             </p>
             <Subscribe />
-          </div>
-          <div className="foot-cont__features_app app-link">
-            <p className="app-link__text">FLAMEOFF ESTIMATOR</p>
-            <Link href="#">
-              <Image src={GooglePlay} alt="google play icon" />
-            </Link>
           </div>
         </div>
 

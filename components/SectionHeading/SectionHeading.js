@@ -1,10 +1,12 @@
 import './SectionHeading.scss';
 
-const SectionHeading = ({ headerTxt, infoTxt }) => {
+const SectionHeading = ({ headerTxt, infoTxt, classNm = '' }) => {
   return (
     <>
       <h2 className="section-header">{headerTxt}</h2>
-      {infoTxt && <p className="section-intro">{infoTxt}</p>}
+      {infoTxt && (
+        <p className={`section-intro ${classNm}`}>{infoTxt}</p>
+      )}
     </>
   );
 };

@@ -12,6 +12,7 @@ const Industries = () => {
       <div className="industries__images">
         {industriesData.map(data => (
           <Image
+            className="industries__images_image"
             key={data.altTxt}
             src={data.image}
             alt={data.altTxt}
