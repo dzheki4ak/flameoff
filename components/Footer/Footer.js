@@ -42,14 +42,20 @@ const Footer = () => (
         <div className="foot-cont__features">
           <div className="foot-cont__features_app app-link">
             <p className="app-link__text">FLAMEOFF ESTIMATOR</p>
-            <Link href="#">
+            <Link
+              href="https://play.google.com/store/apps/details?id=com.flameoff.estimationV3&pli=1"
+              target="_blank"
+            >
               <Image
                 className="app-link__icon"
                 src={GooglePlay}
                 alt="google play icon"
               />
             </Link>
-            <Link href="#">
+            <Link
+              href="https://apps.apple.com/us/app/flameoff-estimator/id6467631953"
+              target="_blank"
+            >
               <Image
                 className="app-link__icon"
                 src={AppStore}
@@ -72,6 +78,7 @@ const Footer = () => (
                 className="foot-cont__terms_links-link"
                 key={data.link}
                 href={data.link}
+                target="_blank"
               >
                 {data.text}
               </Link>

@@ -5,11 +5,31 @@ import LinkedIn from '@/public/images/icons/soc_media_icons/linkedIn.svg';
 import YouTube from '@/public/images/icons/soc_media_icons/you_tube.svg';
 
 const socMediaData = [
-  { icon: FB, link: '#', altTxt: 'facebook icon' },
-  { icon: X, link: '#', altTxt: 'twitter icon' },
-  { icon: Instagram, link: '#', altTxt: 'instagram icon' },
-  { icon: LinkedIn, link: '#', altTxt: 'linked-in icon' },
-  { icon: YouTube, link: '#', altTxt: 'youtube icon' },
+  {
+    icon: FB,
+    link: 'https://www.facebook.com/FlameOFFUS/',
+    altTxt: 'facebook icon',
+  },
+  {
+    icon: X,
+    link: 'https://twitter.com/FlameOFFUS',
+    altTxt: 'twitter icon',
+  },
+  {
+    icon: Instagram,
+    link: 'https://www.instagram.com/flameoffcoatings/',
+    altTxt: 'instagram icon',
+  },
+  {
+    icon: LinkedIn,
+    link: 'https://www.linkedin.com/company/flameoff-coatings-inc',
+    altTxt: 'linked-in icon',
+  },
+  {
+    icon: YouTube,
+    link: 'https://www.youtube.com/channel/UCLCRnLI3757Zczgv67pgBag',
+    altTxt: 'youtube icon',
+  },
 ];
 
 export default socMediaData;
