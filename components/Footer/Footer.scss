@@ -31,7 +31,7 @@
     padding-top: 40px;
 
     &_content {
-      width: 1121px;
+      max-width: 1121px;
       margin: auto;
     }
 
@@ -39,6 +39,7 @@
       &__navbar {
         display: $flex-display;
         justify-content: $between-justify;
+
         &_list {
           gap: 80px;
           text-transform: uppercase;
@@ -87,7 +88,6 @@
 
           .app-link {
             
-
             &__text {
               font-size: $f_s-16;
               font-weight: $light-font;

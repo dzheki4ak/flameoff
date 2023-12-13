@@ -6,10 +6,17 @@
   &__images {
     display: $flex-display;
     gap: 24px;
+    
+
+    &>div {
+      max-height: 250px;
+      min-height: fit-content;
+    }
 
     &_image {
       width: 357px;
-      height: 250px;
+      max-width: 100%;
+      height: auto;
       border-radius: 6px;
     }
   }
