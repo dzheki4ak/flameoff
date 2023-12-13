@@ -10,5 +10,11 @@
     margin-top: 32px;
     font-size: $f_s-18;
     font-weight: $light-font;
+
+    &_image {
+      width: 1121px;
+      height: 300px;
+      max-width: 100%;
+    }
   }
 }

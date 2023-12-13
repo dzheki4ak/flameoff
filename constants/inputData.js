@@ -54,6 +54,6 @@ export const subscribe = {
   imgSrc: LetterIcon,
   imgAltTxt: 'letter icon',
   inputType: 'email',
-  inputName: 'email-subscribe',
+  inputName: 'email',
   inputPlaceholder: 'Your email address',
 }

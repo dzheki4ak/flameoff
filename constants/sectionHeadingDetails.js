@@ -6,6 +6,7 @@ export const benefitsDet = {
   headerTxt: 'Top Benefits',
   infoTxt:
     'FlameOff products manufacture reliable products that significantly improve the fire rating of your construction projects. ',
+  classNm: 'modified',
 };
 
 export const industriesDet = {
@@ -21,5 +22,6 @@ export const aboutDet = {
 export const contactDet = {
   headerTxt: 'Contact Us',
   infoTxt:
-    'Lorem ipsum dolor sit amet consectetur. Volutpat nec mauris diam leo.',
+    'Achieve a proper fire rating with an easy-to-apply, cost effective and environmentally friendly FlameOFF fire barrier paint.',
+    classNm: 'modified',
 };

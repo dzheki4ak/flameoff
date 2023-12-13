@@ -13,4 +13,8 @@
   font-size: $f_s-16;
   text-transform: uppercase;
   letter-spacing: 2px;
+
+  &:hover {
+    cursor: pointer;
+  }
 }

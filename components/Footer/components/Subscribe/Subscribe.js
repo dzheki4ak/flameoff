@@ -7,8 +7,12 @@ import './Subscribe.scss';
 
 const Subscribe = () => {
   return (
-    <form className="subscribe" action="#">
-      <FormInput {...subscribe}/>
+    <form
+      className="subscribe"
+      action="https://flameoffcoatings.com/api/mail/subscribeNewsletter"
+      method="POST"
+    >
+      <FormInput {...subscribe} />
       <Button btnType="submit" text="subscribe" />
     </form>
   );

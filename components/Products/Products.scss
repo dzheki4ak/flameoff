@@ -3,5 +3,8 @@
 
   &__details {
     margin-top: 73px;
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
   }
 }

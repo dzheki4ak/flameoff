@@ -11,8 +11,8 @@ export default function Home() {
     <>
       <main className="main">
         <Products />
-        <Benefits />
         <Industries />
+        <Benefits />
         <Studies />
         <About />
         <ContactUs />
