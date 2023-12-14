@@ -2,7 +2,7 @@
 
 .product-card {
   display: $flex-display;
-  gap: 95px;
+  gap: 90px;
 
   &.rtl {
     flex-direction: row-reverse;
@@ -30,7 +30,7 @@
   }
 
   &__image {
-    width: 548px;
+    width: 538px;
     height: 355px;
     max-width: 60%;
   }
