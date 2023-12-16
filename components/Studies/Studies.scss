@@ -9,6 +9,8 @@
 
   &__cards {
     display: $flex-display;
-    justify-content: $between-justify;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
   }
 }
