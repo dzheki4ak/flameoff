@@ -2,13 +2,17 @@
 
 .product-card {
   display: $flex-display;
-  gap: 95px;
+  gap: 90px;
+  flex-wrap: wrap;
+  justify-content: center;
 
   &.rtl {
     flex-direction: row-reverse;
   }
 
   &__details {
+    width: 493px;
+    flex-grow: 0.5;
     &_header {
       font-size: 28px;
       font-weight: $bold-font;
@@ -30,8 +34,9 @@
   }
 
   &__image {
-    width: 548px;
+    width: 538px;
     height: 355px;
-    max-width: 60%;
+    max-width: 100%;
+    flex-grow: 0.5;
   }
 }

@@ -38,11 +38,17 @@
     .foot-cont {
       &__navbar {
         display: $flex-display;
-        justify-content: $between-justify;
+        justify-content: center;
+        gap: 64px 80px;
+        flex-wrap: wrap;
 
         &_list {
-          gap: 80px;
+          gap: 32px 80px;
           text-transform: uppercase;
+          display: $flex-display;
+          justify-content: center;
+          flex-wrap: wrap;
+          margin: 0 auto;
         }
       }
 
@@ -62,11 +68,14 @@
       }
 
       &__features {
-        display: $flex-display;
-        justify-content: $between-justify;
         margin-top: 60px;
+        display: $flex-display;
+        justify-content: space-between;
+        gap: 64px;
+        flex-wrap: wrap;
 
         &_subscribe {
+          max-width: 400px;
           display: $flex-display;
           flex-direction: column;
           gap: 24px;
@@ -78,6 +87,7 @@
         }
 
         &_app {
+          min-width: fit-content;
           display: $flex-display;
           flex-direction: column;
           justify-content: $between-justify;
@@ -87,7 +97,6 @@
           }
 
           .app-link {
-            
             &__text {
               font-size: $f_s-16;
               font-weight: $light-font;
@@ -103,14 +112,18 @@
 
       &__terms {
         display: $flex-display;
-        justify-content: $between-justify;
+        justify-content: center;
+        gap: 64px 205px;
+        flex-wrap: wrap;
         margin-top: 75px;
         padding: 32px 0;
         border-top: 1px solid #f6f6f6;
 
         &_links {
           display: $flex-display;
-          gap: 40px;
+          justify-content: center;
+          gap: 32px 40px;
+          flex-wrap: wrap;
 
           &-link {
             font-size: $f_s-18;
