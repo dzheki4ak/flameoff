@@ -23,3 +23,9 @@
     font-weight: $light-font;
   }
 }
+
+@media screen and (max-width: 580px) {
+  .benefit-card {
+    width: 327px;
+  }
+}

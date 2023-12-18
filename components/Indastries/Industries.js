@@ -11,13 +11,13 @@ const Industries = () => {
       <SectionHeading headerTxt={industriesDet.headerTxt} />
       <div className="industries__images">
         {industriesData.map(data => (
-          <div key={data.altTxt}>
+
             <Image
+            key={data.altTxt}
               className="industries__images_image"
               src={data.image}
               alt={data.altTxt}
             />
-          </div>
         ))}
       </div>
     </section>
