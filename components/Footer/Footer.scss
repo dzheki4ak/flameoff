@@ -70,12 +70,12 @@
       &__features {
         margin-top: 60px;
         display: $flex-display;
-        justify-content: center;
-        gap: 64px 530px;
+        justify-content: space-between;
+        gap: 64px;
         flex-wrap: wrap;
-        max-width: 100%;
 
         &_subscribe {
+          max-width: 400px;
           display: $flex-display;
           flex-direction: column;
           gap: 24px;
@@ -87,6 +87,7 @@
         }
 
         &_app {
+          min-width: fit-content;
           display: $flex-display;
           flex-direction: column;
           justify-content: $between-justify;

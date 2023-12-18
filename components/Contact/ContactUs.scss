@@ -18,8 +18,14 @@
     &_creds {
       display: $flex-display;
       width: 100%;
-      gap: 30px;
+      flex-wrap: wrap;
+      gap: 0 30px;
       justify-content: $between-justify;
+
+      &>div {
+        width: 48%;
+        flex-grow: 1;
+      }
     }
   }
 }
