@@ -15,6 +15,24 @@
       width: 1121px;
       height: 300px;
       max-width: 100%;
+      // background-image: url('../../public/images/about_us_image.svg');
+    }
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .about {
+    margin-top: $section-top-margin_mob;
+
+    &__details {
+      margin-top: 16px;
+
+      // &_image {
+      //   background-image: url('../../public/images/about_us_image_mob.svg');
+      //   background-repeat: no-repeat;
+      //   background-position: center;
+      //   background-size: cover;
+      // }
     }
   }
 }

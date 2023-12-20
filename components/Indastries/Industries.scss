@@ -22,3 +22,9 @@
     }
   }
 }
+
+@media screen and (max-width: 730px) {
+  .industries {
+    margin-top: $section-top-margin_mob;
+  }
+}

@@ -14,3 +14,13 @@
     gap: 40px;
   }
 }
+
+@media screen and (max-width: 730px) {
+  .studies {
+    margin-top: $section-top-margin_mob;
+  
+    &__header {
+      margin-bottom: $heading-bottom-margin_mob;
+    }
+  }
+}

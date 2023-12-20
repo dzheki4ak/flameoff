@@ -11,3 +11,12 @@
     gap: 24px;
   }
 }
+
+@media screen and (max-width: 730px) {
+  .benefits {
+    margin-top: $section-top-margin_mob;
+    &__details {
+      margin-top: 32px;
+    }
+  }
+}
