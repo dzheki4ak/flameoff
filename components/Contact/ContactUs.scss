@@ -1,7 +1,7 @@
 @import '@/app/variables.scss';
 
 .contact-us {
-  margin: 144px auto 0;
+  margin: $section-top-margin auto 0;
   width: 750px;
   max-width: 100%;
   height: auto;
@@ -22,10 +22,24 @@
       gap: 0 30px;
       justify-content: $between-justify;
 
-      &>div {
+      & > div {
         width: 48%;
         flex-grow: 1;
       }
+    }
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .contact-us {
+    margin-top: $section-top-margin_mob;
+
+    & > .section-header {
+      margin-bottom: 16px;
+    }
+
+    &__form {
+      margin-top: 32px;
     }
   }
 }

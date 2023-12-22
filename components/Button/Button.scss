@@ -17,3 +17,9 @@
     cursor: pointer;
   }
 }
+
+@media screen and (max-width: 675px) {
+  .button {
+    font-size: $f_s-16;
+  }
+}

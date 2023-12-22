@@ -12,14 +12,6 @@ import './Footer.scss';
 
 const Footer = () => (
   <footer className="footer">
-    <section className="footer__top">
-      <FlameOffLogo classNm="footer__top_logo" />
-      <p className="footer__top_text">
-        Achieve a proper fire rating with an easy-to-apply, cost
-        effective and environmentally friendly FlameOFF fire barrier
-        paint.
-      </p>
-    </section>
     <section className="footer__bottom">
       <div className="footer__bottom_content foot-cont">
         <nav className="foot-cont__navbar">

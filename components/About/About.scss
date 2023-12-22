@@ -15,7 +15,10 @@
       width: 1121px;
       height: 300px;
       max-width: 100%;
-      // background-image: url('../../public/images/about_us_image.svg');
+      background-image: url('../../public/images/about_us_image.svg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
     }
   }
 }
@@ -26,13 +29,11 @@
 
     &__details {
       margin-top: 16px;
+      gap: 32px;
 
-      // &_image {
-      //   background-image: url('../../public/images/about_us_image_mob.svg');
-      //   background-repeat: no-repeat;
-      //   background-position: center;
-      //   background-size: cover;
-      // }
+      &_image {
+        background-image: url('../../public/images/about_us_image_mob.svg');
+      }
     }
   }
 }

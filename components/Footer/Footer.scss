@@ -4,28 +4,6 @@
   margin-top: $section-top-margin;
   color: #ffffff;
 
-  &__top {
-    background: #445572;
-    display: $flex-display;
-    flex-direction: column;
-    align-items: $center-item-align;
-    padding: 96px 0 104px;
-    gap: 40px;
-
-    &_logo {
-      width: 191px;
-      height: 69px;
-    }
-
-    &_text {
-      color: #ffffff;
-      font-size: 28px;
-      font-weight: $light-font;
-      text-align: $center-text-align;
-      width: 577px;
-    }
-  }
-
   &__bottom {
     background: #29303c;
     padding-top: 40px;
@@ -137,6 +115,89 @@
           color: #e6e6e6;
           opacity: 0.7;
           text-align: $right-text-align;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .footer {
+    margin-top: 128px;
+
+    &__bottom {
+      padding: 40px 16px 0;
+
+      .foot-cont {
+        &__email {
+          text-align: $center-text-align;
+          margin-top: 32px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 675px) {
+  .footer {
+    &__bottom {
+      .foot-cont {
+        &__features {
+          margin-top: 64px;
+          justify-content: center;
+
+          &_subscribe {
+            & > p {
+              text-align: center;
+            }
+
+            .subscribe {
+              & > button {
+                padding: 18px 24px;
+              }
+            }
+          }
+
+          &_app {
+            .app-link {
+              &__text {
+                text-align: center;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 615px) {
+  .footer {
+    &__bottom {
+      .foot-cont {
+        &__terms {
+          padding: 32px 0 40px;
+          &_links {
+            flex-direction: column;
+            align-items: center;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .footer {
+    &__bottom {
+      .foot-cont {
+        &__navbar {
+          flex-direction: column;
+          align-items: $center-item-align;
+          &_list {
+            flex-direction: column;
+            align-items: $center-item-align;
+          }
         }
       }
     }

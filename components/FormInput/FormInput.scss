@@ -10,7 +10,7 @@
 
   &__field {
     display: $flex-display;
-    padding: 18px;
+    padding: 18px 16px;
     gap: 10px;
     border-radius: 3px;
 
@@ -49,5 +49,37 @@
 
   &.grey {
     margin-bottom: 32px;
+    &:has(textarea) {
+      margin-bottom: 48px;
+    }
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .input-area {
+    &.grey {
+      margin-bottom: 16px;
+    }
+    &__field {
+      &.grey {
+        margin-top: 12px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 675px) {
+  .input-area {
+    &__field {
+      &.white {
+        padding: 18px 12px;
+        gap: 7px;
+
+        & > img {
+          width: 16.75px;
+          height: auto;
+        }
+      }
+    }
   }
 }
