@@ -22,12 +22,19 @@ const ProductCard = ({
         <p className="product-card__details_sec-text">
           {descrTextSec}
         </p>
-        <Button text="Read More" />
+        <Button
+          text="Read More"
+          classNm="product-card__details_button"
+        />
       </div>
       <Image
         className="product-card__image"
         src={imageSrc}
         alt={imgAltText}
+      />
+      <Button
+        text="Read More"
+        classNm="product-card__details_button-mob"
       />
     </div>
   );

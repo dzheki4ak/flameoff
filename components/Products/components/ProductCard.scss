@@ -2,7 +2,7 @@
 
 .product-card {
   display: $flex-display;
-  gap: 90px;
+  gap: 32px 90px;
   flex-wrap: wrap;
   justify-content: center;
 
@@ -31,6 +31,14 @@
     &_sec-text {
       margin-bottom: $heading-bottom-margin;
     }
+
+    &_button {
+    
+      &-mob {
+        display: none;
+      }
+    }
+      
   }
 
   &__image {
@@ -38,6 +46,28 @@
     height: 355px;
     max-width: 100%;
     flex-grow: 0.5;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .product-card {
+    &__details {
+      &_prim-text {
+        margin: 24px 0 16px;
+      }
+
+      &_sec-text {
+        margin-bottom: 32px;
+      }
+
+      &_button {
+        display: none;
+        &-mob {
+          display: block;
+          width: 242px;
+        }
+      }
+    }
   }
 }
 
