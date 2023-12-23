@@ -16,7 +16,7 @@ const FormInput = ({
   return (
     <div className={`input-area ${inputBG}`}>
       {hasLabel && (
-        <label className="input-area__label" for={inputId}>
+        <label className="input-area__label" htmlFor={inputId}>
           {labelText}
         </label>
       )}

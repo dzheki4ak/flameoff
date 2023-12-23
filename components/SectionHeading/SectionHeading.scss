@@ -18,3 +18,10 @@
     margin: auto;
   }
 }
+
+@media screen and (max-width: 730px) {
+  .section-header {
+    font-size: 34px;
+    margin-bottom: $heading-bottom-margin_mob;
+  }
+}

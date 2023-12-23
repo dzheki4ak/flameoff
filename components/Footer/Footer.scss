@@ -4,44 +4,29 @@
   margin-top: $section-top-margin;
   color: #ffffff;
 
-  &__top {
-    background: #445572;
-    display: $flex-display;
-    flex-direction: column;
-    align-items: $center-item-align;
-    padding: 96px 0 104px;
-    gap: 40px;
-
-    &_logo {
-      width: 191px;
-      height: 69px;
-    }
-
-    &_text {
-      color: #ffffff;
-      font-size: 28px;
-      font-weight: $light-font;
-      text-align: $center-text-align;
-      width: 577px;
-    }
-  }
-
   &__bottom {
     background: #29303c;
     padding-top: 40px;
 
     &_content {
-      width: 1121px;
+      max-width: 1121px;
       margin: auto;
     }
 
     .foot-cont {
       &__navbar {
         display: $flex-display;
-        justify-content: $between-justify;
+        justify-content: center;
+        gap: 64px 80px;
+        flex-wrap: wrap;
+
         &_list {
-          gap: 80px;
+          gap: 32px 80px;
           text-transform: uppercase;
+          display: $flex-display;
+          justify-content: center;
+          flex-wrap: wrap;
+          margin: 0 auto;
         }
       }
 
@@ -61,11 +46,14 @@
       }
 
       &__features {
-        display: $flex-display;
-        justify-content: $between-justify;
         margin-top: 60px;
+        display: $flex-display;
+        justify-content: space-between;
+        gap: 64px;
+        flex-wrap: wrap;
 
         &_subscribe {
+          max-width: 400px;
           display: $flex-display;
           flex-direction: column;
           gap: 24px;
@@ -77,6 +65,7 @@
         }
 
         &_app {
+          min-width: fit-content;
           display: $flex-display;
           flex-direction: column;
           justify-content: $between-justify;
@@ -86,8 +75,6 @@
           }
 
           .app-link {
-            
-
             &__text {
               font-size: $f_s-16;
               font-weight: $light-font;
@@ -103,14 +90,18 @@
 
       &__terms {
         display: $flex-display;
-        justify-content: $between-justify;
+        justify-content: center;
+        gap: 64px 205px;
+        flex-wrap: wrap;
         margin-top: 75px;
         padding: 32px 0;
         border-top: 1px solid #f6f6f6;
 
         &_links {
           display: $flex-display;
-          gap: 40px;
+          justify-content: center;
+          gap: 32px 40px;
+          flex-wrap: wrap;
 
           &-link {
             font-size: $f_s-18;
@@ -124,6 +115,89 @@
           color: #e6e6e6;
           opacity: 0.7;
           text-align: $right-text-align;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .footer {
+    margin-top: 128px;
+
+    &__bottom {
+      padding: 40px 16px 0;
+
+      .foot-cont {
+        &__email {
+          text-align: $center-text-align;
+          margin-top: 32px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 675px) {
+  .footer {
+    &__bottom {
+      .foot-cont {
+        &__features {
+          margin-top: 64px;
+          justify-content: center;
+
+          &_subscribe {
+            & > p {
+              text-align: center;
+            }
+
+            .subscribe {
+              & > button {
+                padding: 18px 24px;
+              }
+            }
+          }
+
+          &_app {
+            .app-link {
+              &__text {
+                text-align: center;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 615px) {
+  .footer {
+    &__bottom {
+      .foot-cont {
+        &__terms {
+          padding: 32px 0 40px;
+          &_links {
+            flex-direction: column;
+            align-items: center;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .footer {
+    &__bottom {
+      .foot-cont {
+        &__navbar {
+          flex-direction: column;
+          align-items: $center-item-align;
+          &_list {
+            flex-direction: column;
+            align-items: $center-item-align;
+          }
         }
       }
     }

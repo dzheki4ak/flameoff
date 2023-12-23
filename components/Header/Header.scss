@@ -17,7 +17,7 @@
     justify-content: $between-justify;
 
     &_text {
-      width: 521px;
+      max-width: 521px;
       margin: 0 auto 140px;
       text-align: $center-text-align;
     }
@@ -26,17 +26,33 @@
   &__text {
     &_main {
       font-size: 42px;
-      font-style: normal;
       font-weight: $bold-font;
-      line-height: normal;
     }
 
     &_intro {
       font-size: $f_s-22;
-      font-style: normal;
       font-weight: $light-font;
-      line-height: normal;
       margin: 16px 0 48px;
+    }
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .header {
+    padding: 20px 16px 0;
+    background-image: url('../../public/images/header_image_mob.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    &__text {
+      &_main {
+        font-size: 38px;
+      }
+      &_intro {
+        font-size: $f_s-22;
+        margin-top: 24px;
+      }
     }
   }
 }

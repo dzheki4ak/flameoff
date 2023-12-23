@@ -11,6 +11,7 @@ const productCardDetails = [
       'This product has been tested to international standards including ASTM and UL. Application is ideal for commercial, residential, and industrial projects',
     imgAltText: 'Fire Barrier Paint',
     rtl: false,
+    itemId: 'barrier_paint',
   },
   {
     header: 'FR Clear',
@@ -21,6 +22,7 @@ const productCardDetails = [
       'Classified and tested to ASTM and UL standards',
     imgAltText: 'FR Clear',
     rtl: true,
+    itemId: 'fr_clear',
   },
 ];
 

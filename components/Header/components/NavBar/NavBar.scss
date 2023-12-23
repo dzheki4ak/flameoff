@@ -16,4 +16,23 @@
       gap: 36px;
     }
   }
+
+  &__menu {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .navbar {
+    justify-content: space-between;
+    align-items: baseline;
+    padding-top: 0;
+    &__menu {
+      display: inline;
+    }
+
+    &__links {
+      display: none;
+    }
+  }
 }

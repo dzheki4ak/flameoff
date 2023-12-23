@@ -1,7 +1,5 @@
-import Image from 'next/image';
 import SectionHeading from '../SectionHeading/SectionHeading';
 import { aboutDet } from '@/constants/sectionHeadingDetails';
-import about from '@/public/images/about_us_image.svg';
 
 import './About.scss';
 
@@ -15,11 +13,7 @@ const About = () => {
           fire safety solutions that will improve the fire rating in
           your construction projects.
         </p>
-        <Image
-          className="about__details_image"
-          src={about}
-          alt="firefighters image"
-        />
+        <picture className="about__details_image"></picture>
       </div>
     </section>
   );

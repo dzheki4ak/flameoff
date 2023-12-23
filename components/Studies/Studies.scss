@@ -9,6 +9,18 @@
 
   &__cards {
     display: $flex-display;
-    justify-content: $between-justify;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .studies {
+    margin-top: $section-top-margin_mob;
+  
+    &__header {
+      margin-bottom: $heading-bottom-margin_mob;
+    }
   }
 }

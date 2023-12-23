@@ -12,6 +12,7 @@ const SocialMedia = () => {
           className="social-media__link"
           key={data.link}
           href={data.link}
+          target="_blank"
         >
           <Image
             className="social-media__link_icon"

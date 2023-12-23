@@ -6,6 +6,17 @@
   &__details {
     margin-top: 40px;
     display: $flex-display;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 24px;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .benefits {
+    margin-top: $section-top-margin_mob;
+    &__details {
+      margin-top: 32px;
+    }
   }
 }
