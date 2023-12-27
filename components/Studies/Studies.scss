@@ -13,6 +13,10 @@
     flex-wrap: wrap;
     gap: 40px;
   }
+
+  &__slider {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 730px) {
@@ -22,5 +26,26 @@
     &__header {
       margin-bottom: $heading-bottom-margin_mob;
     }
+
+    &__cards {
+      display: none;
+    }
+
+    &__slider {
+      display: block;
+    }
+  }
+
+  .slick-arrow.slick-next, .slick-arrow.slick-prev {
+    display: none!Important;
+  }
+
+  .slick-slide.slick-active.slick-current {
+    display: flex;
+    justify-content: center;
+  }
+
+  .slick-dots li {
+    margin: 0;
   }
 }
