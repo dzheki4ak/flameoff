@@ -77,7 +77,7 @@ const Footer = () => (
             ))}
           </div>
           <p className="foot-cont__terms_copyright">
-            Copyright © 2023 Flame OFF | All Rights Reserved
+            Copyright © 2023 FlameOFF® | All Rights Reserved
           </p>
         </div>
       </div>

@@ -22,7 +22,7 @@
 @media screen and (max-width: 730px) {
   .studies {
     margin-top: $section-top-margin_mob;
-  
+
     &__header {
       margin-bottom: $heading-bottom-margin_mob;
     }
@@ -36,16 +36,25 @@
     }
   }
 
-  .slick-arrow.slick-next, .slick-arrow.slick-prev {
-    display: none!Important;
+  .slick-arrow.slick-next,
+  .slick-arrow.slick-prev {
+    display: none !important;
   }
 
   .slick-slide.slick-active.slick-current {
     display: flex;
     justify-content: center;
+    padding-bottom: 16px;
   }
 
-  .slick-dots li {
-    margin: 0;
+  .slick-dots {
+    bottom: 32px;
+    & li {
+      margin: 0;
+
+      & button:before {
+        font-size: 14px;
+      }
+    }
   }
 }

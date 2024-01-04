@@ -7,7 +7,7 @@ const benefitCardDetails = [
   {
     icon: Diploma,
     title: 'Tested and Certified',
-    text: 'The efficacy of FlameOFF products has been tested by third party labs, providing reliable certification to ensure performance and building safety.',
+    text: 'The efficacy of FlameOFF® products has been tested by third party labs, providing reliable certification to ensure performance and building safety.',
     altTxt: 'diploma icon',
   },
   {
