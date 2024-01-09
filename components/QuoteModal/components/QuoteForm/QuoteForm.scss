@@ -1,0 +1,30 @@
+.quote__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+
+  &_creds {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 20px 20px;
+    justify-content: space-between;
+
+    & > div {
+      width: 48%;
+      flex-grow: 1;
+    }
+  }
+
+  &_title {
+    margin-right: auto;
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 32px;
+  }
+
+  &_button {
+    margin-top: 40px;
+  }
+}
