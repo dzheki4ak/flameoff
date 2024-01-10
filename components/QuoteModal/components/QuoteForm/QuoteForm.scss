@@ -27,4 +27,34 @@
   &_button {
     margin-top: 40px;
   }
+
+  .quote__recaptcha {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .quote__form {
+    &_title {
+      margin-bottom: 0;
+    }
+
+    &_button {
+      margin-top: 0;
+    }
+  }
+}
+
+@media screen and (max-height: 735px) {
+  .quote__form {
+    gap: 10px;
+
+    &_title {
+      font-size: 24px;
+    }
+
+    &_creds {
+      gap: 10px 20px;
+    }
+  }
 }

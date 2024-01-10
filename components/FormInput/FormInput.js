@@ -12,6 +12,8 @@ const FormInput = ({
   inputName,
   inputPlaceholder,
   inputId,
+  inputPattern,
+  filesAccepted
 }) => {
   return (
     <div className={`input-area ${inputBG}`}>
@@ -33,7 +35,7 @@ const FormInput = ({
             className={`input-area__field_input ${inputBG} ${inputName}`}
             name={inputName}
             placeholder={inputPlaceholder}
-            id={inputId || ''}
+            id={inputId}
           ></textarea>
         ) : (
           <input
@@ -41,7 +43,9 @@ const FormInput = ({
             type={inputType}
             name={inputName}
             placeholder={inputPlaceholder}
-            id={inputId || ''}
+            id={inputId}
+            pattern={inputPattern}
+            accept={filesAccepted}
           />
         )}
       </div>
