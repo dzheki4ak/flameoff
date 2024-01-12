@@ -1,0 +1,63 @@
+.mob-menu {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 32px 16px 20px;
+  max-width: 100%;
+  width: 100%;
+  border: 1px solid #354150;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  transition: right 0.3s ease-out;
+  z-index: 1;
+
+  &.open {
+    right: 0;
+  }
+
+  &__head {
+    padding: 0 0 10px;
+    display: flex;
+    justify-content: space-between;
+
+    & img {
+      cursor: pointer;
+    }
+  }
+
+  &__nav {
+    padding: 24px 0;
+    &_list {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      &-item {
+        padding: 12px 0;
+        & > a {
+          color: #354150;
+        }
+      }
+    }
+  }
+
+  &__divider {
+    margin: 207px 0 24px;
+    height: 2px;
+    color: #f9fafb;
+  }
+
+  &__btn-group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    .btn-group {
+      &__quote {
+        background-color: #fff;
+        outline: 1px solid #b40404;
+        color: #b40404;
+      }
+    }
+  }
+}

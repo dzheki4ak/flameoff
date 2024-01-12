@@ -2,7 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import FlameOffLogo from '../FlameOffLogo/FlameOffLogo';
 import Navlist from '../NavList/Navlist';
-import navlist from '@/constants/navlist';
+import {navlist} from '@/constants/navlist';
 import SocialMedia from './components/SocialMedia/SocialMedia';
 import termsData from '@/constants/termsData';
 import GooglePlay from '@/public/images/googleplay.svg';
