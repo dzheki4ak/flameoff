@@ -6,6 +6,10 @@
 
   &.white {
     background: #ffffff;
+
+    &.border {
+      border: 1px solid #CED4DA;
+    }
   }
 
   &__field {
@@ -37,7 +41,10 @@
       }
       &.message {
         height: 197px;
-        font-family: inherit;
+      }
+
+      &.border.message {
+        height: 118px;
       }
     }
 

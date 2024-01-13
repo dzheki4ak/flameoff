@@ -1,0 +1,15 @@
+@import '@/app/variables.scss';
+
+.secondary__button {
+  padding: 13px 32px;
+  border-radius: 3px;
+  border: 1px solid #cad0dc;
+  background: #f9f9f9;
+  color: #6c757d;
+  font-weight: $bold-font;
+  font-size: $f_s-18;
+
+  &:hover {
+    cursor: pointer;
+  }
+}

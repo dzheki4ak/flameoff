@@ -2,6 +2,7 @@
 
 .studies-card {
   width: 347px;
+  min-height: 543px;
   border-radius: 6px;
   box-shadow: -4px 10px 15px 0px rgba(78, 93, 120, 0.15);
 
@@ -27,5 +28,16 @@
     width: 347px;
     height: auto;
     max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .studies-card {
+    width: 328px;
+    height: 565px;
+
+    &__info {
+      padding: 24px 16px 32px;
+    }
   }
 }

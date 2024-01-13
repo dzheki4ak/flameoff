@@ -1,0 +1,22 @@
+.modal__close_button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .ReactModal__Content--after-open {
+    padding: 22px !important;
+  }
+}
+
+@media screen and (max-height: 735px) {
+  .ReactModal__Content--after-open {
+    padding: 10px !important;
+  }
+
+}

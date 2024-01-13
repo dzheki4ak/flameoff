@@ -2,7 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import FlameOffLogo from '../FlameOffLogo/FlameOffLogo';
 import Navlist from '../NavList/Navlist';
-import navlist from '@/constants/navlist';
+import {navlist} from '@/constants/navlist';
 import SocialMedia from './components/SocialMedia/SocialMedia';
 import termsData from '@/constants/termsData';
 import GooglePlay from '@/public/images/googleplay.svg';
@@ -77,7 +77,7 @@ const Footer = () => (
             ))}
           </div>
           <p className="foot-cont__terms_copyright">
-            Copyright © 2023 Flame OFF | All Rights Reserved
+            Copyright © 2023 FlameOFF® | All Rights Reserved
           </p>
         </div>
       </div>

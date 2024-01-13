@@ -10,9 +10,9 @@ export const metadata = {
   title:
     'Fire Rated Intumescent and Fire Retardant Spray Paints | FlameOFF®',
   description:
-    'FlameOFF® Coatings manufactures Intumescent Fire Resistant Paint & Fire Retardant Spray tested to  ASTM E-119, ASTM E-84, ICC-ES Listed, NFPA 701.',
+    'FlameOFF® Coatings manufactures Intumescent Fire Resistant Paint & Fire Retardant Spray tested to ASTM E-119, ASTM E-84, ICC-ES Listed, NFPA 701.',
   keywords:
-    'FlameOFF Coatings Inc., intumescent, fire rated paint, fire resistant paint, fire retardant spray, astm e119, fire paint, fireproof paint , intumescent thickness, fire protection',
+    'FlameOFF® Coatings Inc., intumescent, fire rated paint, fire resistant paint, fire retardant spray, astm e119, fire paint, fireproof paint , intumescent thickness, fire protection',
   favicon: 'icon.ico',
 };
 

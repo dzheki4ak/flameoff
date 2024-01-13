@@ -1,0 +1,29 @@
+@import '@/app/variables.scss';
+
+.success__form {
+  display: flex;
+  flex-direction: column;
+  padding-top: 16px;
+  align-items: center;
+
+  &_icon {
+    height: 88px;
+    width: 88px;
+  }
+
+  &_title {
+    font-size: 28px;
+    font-weight: $bold-font;
+    margin: 40px 0 12px;
+  }
+
+  &_text {
+    text-align: center;
+    font-size: $f_s-18;
+    font-weight: $light-font;
+  }
+
+  &_button {
+    margin-top: 72px;
+  }
+}
