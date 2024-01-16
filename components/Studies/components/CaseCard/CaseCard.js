@@ -8,7 +8,7 @@ const CaseCard = ({ imgSrc, altText, title, text }) => {
       <Image
         className="studies-card__image"
         src={imgSrc}
-        alt={altText}
+        alt={`${altText}`}
       />
       <div className="studies-card__info">
         <h4 className="studies-card__info_title">{title}</h4>

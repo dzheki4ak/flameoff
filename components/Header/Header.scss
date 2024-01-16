@@ -3,7 +3,8 @@
 .header {
   width: 100%;
   height: 704px;
-  background-image: url('../../public/images/header_image.svg');
+  background: url('../../public/images/header_image.svg') center;
+  background-size: cover;
   color: #ffffff;
 
   &__content {
@@ -33,6 +34,27 @@
       font-size: $f_s-22;
       font-weight: $light-font;
       margin: 16px 0 48px;
+    }
+  }
+
+  &.intumescent-fire-resistant-paint {
+    background: url('../../public/images/header_image_fbp.svg') center;
+    height: 1054px;
+
+    & .header__content {
+      display: flex;
+      align-items: center;
+      &_text {
+        max-width: 652px;
+        margin: auto;
+      }
+
+      &_image {
+        max-width: 100%;
+        width: 439px;
+        height: auto;
+        margin-bottom: -113px;
+      }
     }
   }
 }

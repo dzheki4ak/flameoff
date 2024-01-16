@@ -1,15 +1,20 @@
 'use client';
 
 import { useState } from 'react';
-
-import Button from '../Button/Button';
+import { usePathname } from 'next/navigation';
+import HeaderContent from './components/HeaderContent/HeaderContent';
 import NavBar from './components/NavBar/NavBar';
 import CustomModal from '../QuoteModal/QuoteModal';
 import MobileMenu from '../MobileMenu/MobileMenu';
+import Image from 'next/image';
+import links from '@/constants/links';
+import * as headContent from '@/constants/headerContent';
 
 import './Header.scss';
 
 const Header = () => {
+  const pathname = usePathname().slice(1);
+
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [isMobOpen, setIsMobOpen] = useState(false);
 
@@ -25,22 +30,33 @@ const Header = () => {
     setIsMobOpen(!isMobOpen);
   };
 
+  let headerCont;
+
+  if (pathname === links.fireBarrier) {
+    headerCont = headContent.fbpHeaderContent;
+  } else if (pathname === links.frClear) {
+    headerCont = headContent.frcHeaderContent;
+  } else {
+    headerCont = headContent.homeHeaderContent;
+  }
+
   return (
-    <header className="header">
+    <header className={`header ${pathname}`}>
       <div className="header__content">
         <NavBar
           btnClickFn={openModal}
           mobBtnClickFn={mobMenuToggle}
         />
-        <div className="header__content_text header__text">
-          <h1 className="header__text_main">
-            Reputable Fire Protection Coatings
-          </h1>
-          <p className="header__text_intro">
-            Trusted intumescent paint and fire retardant solutions
-          </p>
-          <Button clickFn={openModal} text="Get a free quote" />
-        </div>
+        <HeaderContent btnClickFn={openModal} {...headerCont} />
+
+        {pathname !== '' && (
+          <Image
+            className="header__content_image"
+            src={headerCont.imageSrc}
+            alt="product image"
+          />
+        )}
+
         <CustomModal
           modalIsOpen={modalIsOpen}
           closeModal={closeModal}

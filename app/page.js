@@ -3,7 +3,7 @@ import Benefits from '@/components/Benefits/Benefits';
 import About from '@/components/About/About';
 import Studies from '@/components/Studies/Studies';
 import ContactUs from '@/components/Contact/ContactUs';
-import Industries from '@/components/Indastries/Industries';
+import Industries from '@/components/Industries/Industries';
 import './page.scss';
 
 export default function Home() {
