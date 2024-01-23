@@ -5,6 +5,8 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import './Studies.scss';
+import SectionHeading from '../SectionHeading/SectionHeading';
+import { caseStudiesDet } from '@/constants/sectionHeadingDetails';
 
 const Studies = () => {
   const settings = {
@@ -25,7 +27,7 @@ const Studies = () => {
 
   return (
     <section className="studies">
-      <h2 className="studies__header section-header">Case Studies</h2>
+      <SectionHeading {...caseStudiesDet} />
       <div className="studies__cards">
         {studiesCardDetails.map(info => (
           <CaseCard key={info.title} {...info} />

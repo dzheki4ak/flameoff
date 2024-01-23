@@ -2,12 +2,12 @@ import './SectionHeading.scss';
 
 const SectionHeading = ({ headerTxt, infoTxt, classNm = '' }) => {
   return (
-    <>
-      <h2 className="section-header">{headerTxt}</h2>
+    <div className='section-heading'>
+      <h2 className="section-heading__header">{headerTxt}</h2>
       {infoTxt && (
-        <p className={`section-intro ${classNm}`}>{infoTxt}</p>
+        <p className={`section-heading__intro ${classNm}`}>{infoTxt}</p>
       )}
-    </>
+    </div>
   );
 };
 

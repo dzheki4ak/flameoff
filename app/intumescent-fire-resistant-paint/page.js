@@ -1,5 +1,7 @@
+import Safety from './components/Safety/Safety';
+
 const FireBarrierPaint = () => {
-  return <div>FBP</div>;
+  return <Safety />;
 };
 
 export default FireBarrierPaint;

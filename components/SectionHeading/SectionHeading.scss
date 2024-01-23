@@ -1,27 +1,32 @@
 @import '@/app/variables.scss';
 
-.section-header {
-  text-align: $center-text-align;
-  font-size: 38px;
-  font-weight: $bold-font;
+.section-heading {
   margin-bottom: $heading-bottom-margin;
-}
+  &__header {
+    text-align: $center-text-align;
+    font-size: 38px;
+    font-weight: $bold-font;
+    margin-bottom: 18px;
+  }
 
-.section-intro {
-  font-size: $f_s-18;
-  font-weight: $light-font;
+  &__intro {
+    font-size: $f_s-18;
+    font-weight: $light-font;
 
-  &.modified {
-    text-align: center;
-    font-size: 20px;
-    max-width: 704px;
-    margin: auto;
+    &.modified {
+      text-align: center;
+      font-size: 20px;
+      max-width: 704px;
+      margin: auto;
+    }
   }
 }
 
 @media screen and (max-width: 730px) {
-  .section-header {
-    font-size: 34px;
-    margin-bottom: $heading-bottom-margin_mob;
+  .section-heading {
+    &__header {
+      font-size: 34px;
+      margin-bottom: $heading-bottom-margin_mob;
+    }
   }
 }

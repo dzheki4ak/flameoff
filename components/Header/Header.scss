@@ -37,8 +37,8 @@
     }
   }
 
-  &.intumescent-fire-resistant-paint {
-    background: url('../../public/images/header_image_fbp.svg') center;
+  &.intumescent-fire-resistant-paint,
+  &.fire-retardant-clear-spray {
     height: 1054px;
 
     & .header__content {
@@ -56,6 +56,14 @@
         margin-bottom: -113px;
       }
     }
+  }
+
+  &.intumescent-fire-resistant-paint {
+    background: url('../../public/images/header_image_fbp.svg') center;
+  }
+
+  &.fire-retardant-clear-spray {
+    background: url('../../public/images/header_image_frc.svg') center;
   }
 }
 

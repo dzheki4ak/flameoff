@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={pageFont.className}>
         <Header />
-        {children}
+        <main className="main">{children}</main>
         <Footer />
       </body>
     </html>

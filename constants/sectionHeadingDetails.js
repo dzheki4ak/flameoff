@@ -3,7 +3,7 @@ export const productsDet = {
   infoTxt: '',
 };
 export const benefitsDet = {
-  headerTxt: 'Top Benefits',
+  headerTxt: 'Benefits',
   infoTxt:
     'FlameOFF® products manufacture reliable products that significantly improve the fire rating of your construction projects. ',
   classNm: 'modified',
@@ -14,6 +14,11 @@ export const industriesDet = {
   infoTxt: '',
 };
 
+export const caseStudiesDet = {
+  headerTxt: 'Case Studies',
+  infoTxt: '',
+}
+
 export const aboutDet = {
   headerTxt: 'About Us',
   infoTxt:
@@ -23,5 +28,12 @@ export const contactDet = {
   headerTxt: 'Contact Us',
   infoTxt:
     'Achieve a proper fire rating with an easy-to-apply, cost effective and environmentally friendly FlameOFF® Fire Barrier Paint.',
-    classNm: 'modified',
+  classNm: 'modified',
+};
+
+export const fbpDesignedForSafety = {
+  headerTxt: 'Designed For Safety',
+  infoTxt:
+    'Fire Barrier Paint can be applied to the following substrates ensuring reliable protection against building fires. ',
+    classNm: 'modified'
 };

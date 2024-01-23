@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import industriesData from '@/constants/IndustriesData';
+import {industriesData} from '@/constants/IndustriesData';
 import SectionHeading from '../SectionHeading/SectionHeading';
 import { industriesDet } from '@/constants/sectionHeadingDetails';
 
@@ -11,7 +11,6 @@ const Industries = () => {
       <SectionHeading headerTxt={industriesDet.headerTxt} />
       <div className="industries__images">
         {industriesData.map(data => (
-
             <Image
             key={data.altTxt}
               className="industries__images_image"

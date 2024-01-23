@@ -1,0 +1,18 @@
+.set__images {
+  display: flex;
+  gap: 24px 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  &>div {
+    max-height: 250px;
+    min-height: fit-content;
+  }
+
+  &_image {
+    width: 357px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+  }
+}

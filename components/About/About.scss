@@ -6,10 +6,14 @@
   &__details {
     display: $flex-display;
     flex-direction: column;
-    gap: 40px;
+    gap: 48px;
     margin-top: 32px;
     font-size: $f_s-18;
     font-weight: $light-font;
+
+    &_text {
+      margin-top: -32px;
+    }
 
     &_image {
       width: 1121px;
