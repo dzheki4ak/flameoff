@@ -17,7 +17,7 @@ export const industriesDet = {
 export const caseStudiesDet = {
   headerTxt: 'Case Studies',
   infoTxt: '',
-}
+};
 
 export const aboutDet = {
   headerTxt: 'About Us',
@@ -34,6 +34,43 @@ export const contactDet = {
 export const fbpDesignedForSafety = {
   headerTxt: 'Designed For Safety',
   infoTxt:
-    'Fire Barrier Paint can be applied to the following substrates ensuring reliable protection against building fires. ',
-    classNm: 'modified'
+    'Fire Barrier Paint can be applied to the following substrates ensuring reliable protection against building fires.',
+  classNm: 'modified',
+};
+
+export const fscDesignedForSafety = {
+  headerTxt: 'Designed For Safety',
+  infoTxt:
+    'Lorem ipsum dolor sit amet consectetur. Quam egestas dignissim mi et. Pellentesque molestie cras elementum justo eleifend nullam semper.',
+  classNm: 'modified',
+};
+
+export const fbpShielding = {
+  headerTxt: 'Painting Today, Shielding Tomorrow',
+  infoTxt: 'FlameOFF Fire Barrier Paint offers many benefits:',
+  classNm: 'modified',
+};
+
+export const fscShielding = {
+  headerTxt: 'Painting Today, Shielding Tomorrow',
+  infoTxt:
+    'Lorem ipsum dolor sit amet consectetur. Et viverra elit in quam ut turpis urna nunc.',
+};
+
+export const fbpOverview = {
+  headerTxt: 'Overview',
+  infoTxt:
+    'Fire Barrier Paint is an advanced and trustworthy fire safety solution for the interiors of your construction projects.',
+};
+
+export const fscOverview = {
+  headerTxt: 'Overview',
+  infoTxt:
+    'FlameOFF products stand as the cornerstone in advancing the fire safety measures of your construction projects. ',
+};
+
+export const productTechData = {
+  headerTxt: 'Technical Data',
+  infoTxt:
+    'Ensure proper application contact our support team with any questions.',
 };
