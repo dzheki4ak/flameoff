@@ -61,6 +61,7 @@ export const fbpOverview = {
   headerTxt: 'Overview',
   infoTxt:
     'Fire Barrier Paint is an advanced and trustworthy fire safety solution for the interiors of your construction projects.',
+    classNm: 'modified',
 };
 
 export const fscOverview = {

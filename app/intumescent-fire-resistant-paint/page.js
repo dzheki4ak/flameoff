@@ -1,10 +1,15 @@
 import Safety from '../components/Safety/Safety';
 import Shielding from '../components/Shielding/Shielding';
+import Overview from '../components/Overview/Overview';
 
-import { fbpDesignedForSafety } from '@/constants/sectionHeadingDetails';
+import {
+  fbpDesignedForSafety,
+  fbpShielding,
+  fbpOverview,
+} from '@/constants/sectionHeadingDetails';
 import { designedForSafetyData } from '@/constants/IndustriesData';
-import { fbpShielding } from '@/constants/sectionHeadingDetails';
 import { fbpShieldingDetails } from '@/constants/shiedlingDetails';
+import { fbpOverviewDet } from '@/constants/overviewDetails';
 
 const FireBarrierPaint = () => {
   return (
@@ -16,6 +21,10 @@ const FireBarrierPaint = () => {
       <Shielding
         fbpShieldingHeadDetails={fbpShielding}
         fbpShieldingImageDetails={fbpShieldingDetails}
+      />
+      <Overview
+        fbpOverviewHeadDetails={fbpOverview}
+        fbpOverviewCardDetails={fbpOverviewDet}
       />
     </>
   );
