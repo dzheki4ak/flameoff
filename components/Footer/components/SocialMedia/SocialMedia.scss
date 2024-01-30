@@ -1,9 +1,9 @@
 @import '@/app/variables.scss';
 
 .social-media {
-  display: $flex-display;
+  display: flex;
   gap: 12px;
-  align-items: $end-item-align;
+  align-items: end;
 
   &__link {
     font-size: 0;

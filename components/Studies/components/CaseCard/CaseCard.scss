@@ -4,10 +4,10 @@
   width: 347px;
   min-height: 543px;
   border-radius: 6px;
-  box-shadow: -4px 10px 15px 0px rgba(78, 93, 120, 0.15);
+  box-shadow: -4px 10px 15px 0px #4e5d7826;
 
   &__info {
-    display: $flex-display;
+    display: flex;
     flex-direction: column;
     gap: 16px;
     padding: 24px 16px 40px;

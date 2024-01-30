@@ -8,19 +8,19 @@
   color: #ffffff;
 
   &__content {
-    display: $flex-display;
+    display: flex;
     height: 100%;
     width: 100%;
     max-width: 1121px;
 
     margin: auto;
     flex-direction: column;
-    justify-content: $between-justify;
+    justify-content: space-between;
 
     &_text {
       max-width: 521px;
       margin: 0 auto 140px;
-      text-align: $center-text-align;
+      text-align: center;
     }
   }
 

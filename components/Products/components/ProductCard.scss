@@ -1,7 +1,7 @@
 @import '@/app/variables.scss';
 
 .product-card {
-  display: $flex-display;
+  display: flex;
   gap: 32px 90px;
   flex-wrap: wrap;
   justify-content: center;
@@ -33,12 +33,10 @@
     }
 
     &_button {
-    
       &-mob {
         display: none;
       }
     }
-      
   }
 
   &__image {

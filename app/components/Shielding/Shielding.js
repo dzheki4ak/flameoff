@@ -1,5 +1,5 @@
 import SectionHeading from '@/components/SectionHeading/SectionHeading';
-import Image from 'next/image';
+import ShieldingCard from './components/ShieldingCard';
 import './Shielding.scss';
 
 const Shielding = ({
@@ -11,7 +11,7 @@ const Shielding = ({
       <SectionHeading {...fbpShieldingHeadDetails} />
       <div className="shielding__cards">
         {fbpShieldingImageDetails.map(info => (
-          <Image key={info.text} src={info.icon} alt={info.altTxt} />
+          <ShieldingCard key={info.text} {...info} />
         ))}
       </div>
     </section>

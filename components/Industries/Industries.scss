@@ -4,12 +4,12 @@
   margin-top: $section-top-margin;
 
   &__images {
-    display: $flex-display;
+    display: flex;
     gap: 24px 24px;
     flex-wrap: wrap;
     justify-content: center;
 
-    &>div {
+    & > div {
       max-height: 250px;
       min-height: fit-content;
     }

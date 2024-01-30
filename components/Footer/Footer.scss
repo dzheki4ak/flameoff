@@ -15,7 +15,7 @@
 
     .foot-cont {
       &__navbar {
-        display: $flex-display;
+        display: flex;
         justify-content: center;
         gap: 64px 80px;
         flex-wrap: wrap;
@@ -23,7 +23,7 @@
         &_list {
           gap: 32px 80px;
           text-transform: uppercase;
-          display: $flex-display;
+          display: flex;
           justify-content: center;
           flex-wrap: wrap;
           margin: 0 auto;
@@ -37,7 +37,7 @@
         color: #ffffff;
         text-decoration: none;
         display: block;
-        text-align: $right-text-align;
+        text-align: right;
 
         &:hover {
           color: #b40404;
@@ -47,14 +47,14 @@
 
       &__features {
         margin-top: 60px;
-        display: $flex-display;
+        display: flex;
         justify-content: space-between;
         gap: 64px;
         flex-wrap: wrap;
 
         &_subscribe {
           max-width: 400px;
-          display: $flex-display;
+          display: flex;
           flex-direction: column;
           gap: 24px;
           justify-content: end;
@@ -66,9 +66,9 @@
 
         &_app {
           min-width: fit-content;
-          display: $flex-display;
+          display: flex;
           flex-direction: column;
-          justify-content: $between-justify;
+          justify-content: space-between;
           gap: 16px;
           & a {
             font-size: 0;
@@ -89,7 +89,7 @@
       }
 
       &__terms {
-        display: $flex-display;
+        display: flex;
         justify-content: center;
         gap: 64px 205px;
         flex-wrap: wrap;
@@ -98,7 +98,7 @@
         border-top: 1px solid #f6f6f6;
 
         &_links {
-          display: $flex-display;
+          display: flex;
           justify-content: center;
           gap: 32px 40px;
           flex-wrap: wrap;
@@ -114,7 +114,7 @@
         &_copyright {
           color: #e6e6e6;
           opacity: 0.7;
-          text-align: $right-text-align;
+          text-align: right;
         }
       }
     }
@@ -130,7 +130,7 @@
 
       .foot-cont {
         &__email {
-          text-align: $center-text-align;
+          text-align: center;
           margin-top: 32px;
         }
       }
@@ -193,10 +193,10 @@
       .foot-cont {
         &__navbar {
           flex-direction: column;
-          align-items: $center-item-align;
+          align-items: center;
           &_list {
             flex-direction: column;
-            align-items: $center-item-align;
+            align-items: center;
           }
         }
       }

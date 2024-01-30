@@ -1,15 +1,15 @@
 @import '@/app/variables.scss';
 
 .navbar {
-  display: $flex-display;
+  display: flex;
   width: 100%;
   padding-top: 14px;
 
   &__links {
-    display: $flex-display;
+    display: flex;
     width: 100%;
-    justify-content: $between-justify;
-    align-items: $end-item-align;
+    justify-content: space-between;
+    align-items: end;
     margin-left: 40px;
 
     &_list {

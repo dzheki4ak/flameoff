@@ -8,12 +8,12 @@
     background: #ffffff;
 
     &.border {
-      border: 1px solid #CED4DA;
+      border: 1px solid #ced4da;
     }
   }
 
   &__field {
-    display: $flex-display;
+    display: flex;
     padding: 18px 16px;
     gap: 10px;
     border-radius: 3px;

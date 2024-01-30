@@ -4,7 +4,7 @@
   margin-top: $section-top-margin;
 
   &__details {
-    display: $flex-display;
+    display: flex;
     flex-direction: column;
     gap: 48px;
     margin-top: 32px;
