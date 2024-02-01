@@ -1,9 +1,11 @@
 import Link from 'next/link';
 import SectionHeading from '@/components/SectionHeading/SectionHeading';
 
+import Image from 'next/image';
+
 import './TechData.scss';
 
-const TechData = ({ fbpTechHeadingData }) => {
+const TechData = ({ fbpTechHeadingData, fbpTechData }) => {
   return (
     <section className="technical">
       <SectionHeading {...fbpTechHeadingData} />
@@ -21,9 +23,26 @@ const TechData = ({ fbpTechHeadingData }) => {
           View Legend
         </Link>
       </div>
-      <table>
-        <tbody>
-          <tr key=""></tr>
+      <table className="technical__table t-table">
+        <tbody className="t-table__body">
+          <tr className="t-table__body_row">
+            <th>Agency Name</th>
+            <th>Report Number</th>
+            <th>Details</th>
+            <th>PDF</th>
+          </tr>
+          {fbpTechData.map(data => (
+            <tr className="t-table__body_row" key={data.reportN}>
+              <td>
+                <Image src={data.agency} alt={data.altTxt} />
+              </td>
+              <td>{data.reportN}</td>
+              <td>{data.details}</td>
+              <td>
+                <Image src={data.file} alt={data.altTxt} />
+              </td>
+            </tr>
+          ))}
         </tbody>
       </table>
     </section>

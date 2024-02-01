@@ -7,11 +7,12 @@ import {
   fbpDesignedForSafety,
   fbpShielding,
   fbpOverview,
-  productTechData
+  productTechData,
 } from '@/constants/sectionHeadingDetails';
 import { designedForSafetyData } from '@/constants/IndustriesData';
 import { fbpShieldingDetails } from '@/constants/shiedlingDetails';
 import { fbpOverviewDet } from '@/constants/overviewDetails';
+import fbpTechDataDet from '@/constants/technicalTableData';
 
 const FireBarrierPaint = () => {
   return (
@@ -28,7 +29,10 @@ const FireBarrierPaint = () => {
         fbpOverviewHeadDetails={fbpOverview}
         fbpOverviewCardDetails={fbpOverviewDet}
       />
-      <TechData fbpTechHeadingData={productTechData}/>
+      <TechData
+        fbpTechHeadingData={productTechData}
+        fbpTechData={fbpTechDataDet}
+      />
     </>
   );
 };
