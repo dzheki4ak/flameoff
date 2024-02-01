@@ -11,6 +11,7 @@ const ProductCard = ({
   imgAltText,
   rtl,
   itemId,
+  pageLink,
 }) => {
   return (
     <div id={itemId} className={`product-card ${rtl && 'rtl'}`}>
@@ -25,6 +26,7 @@ const ProductCard = ({
         <Button
           text="Read More"
           classNm="product-card__details_button"
+          link={pageLink}
         />
       </div>
       <Image
@@ -35,6 +37,7 @@ const ProductCard = ({
       <Button
         text="Read More"
         classNm="product-card__details_button-mob"
+        link={pageLink}
       />
     </div>
   );

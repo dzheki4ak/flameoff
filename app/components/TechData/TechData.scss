@@ -1,0 +1,28 @@
+@import '@/app/variables.scss';
+
+.technical {
+  margin-top: $section-top-margin_page;
+
+  &__listing {
+    &_header {
+      margin-bottom: 28px;
+      font-size: 28px;
+      font-weight: $bold-font;
+    }
+
+    &_text {
+      font-size: $f_s-18;
+      font-weight: $light-font;
+    }
+
+    &_legend {
+      font-size: $f_s-22;
+      font-weight: $bold-font;
+      color: #b40404;
+      margin: 16px 0;
+      display: block;
+      text-align: right;
+      text-decoration: none;
+    }
+  }
+}

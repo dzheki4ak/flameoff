@@ -1,3 +1,54 @@
+@import '@/app/variables.scss';
+
 .overview {
-  margin-top: 160px;
+  margin-top: $section-top-margin_page;
+
+  &__cards {
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+
+    &_card {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 24px 0;
+      &:nth-child(2) {
+        flex-direction: row-reverse;
+      }
+
+      &-image {
+        max-width: 100%;
+        width: 514px;
+        height: auto;
+      }
+
+      &-text {
+        font-size: $f_s-18;
+        font-weight: $light-font;
+        margin: 0 48px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .overview {
+    &__cards {
+      &_card {
+        flex-direction: column;
+        justify-content: center;
+
+        &:nth-child(2) {
+          flex-direction: column;
+        }
+
+        &-text {
+          max-width: 100%;
+          width: 514px;
+          margin: 0;
+        }
+      }
+    }
+  }
 }

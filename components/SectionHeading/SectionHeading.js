@@ -1,23 +1,32 @@
 import './SectionHeading.scss';
 
-const ModifiedHeading = ({ classNm }) => (
-  <h2 className={`section-heading__header ${classNm}`}>
-    Painting Today, <span style={{ color: 'red' }}>Shielding</span>{' '}
-    Tomorrow
-  </h2>
-);
+const ModifiedHeading = ({ classNm, headerTxt }) => {
+  const basicClass = 'section-heading__header';
+
+  if (headerTxt.includes('Shielding')) {
+    return (
+      <h2 className={`${basicClass} ${classNm}`}>
+        Painting Today,{' '}
+        <span style={{ color: 'red' }}>Shielding</span> Tomorrow
+      </h2>
+    );
+  }
+
+  if (headerTxt.includes('Safety')) {
+    return (
+      <h2 className={`${basicClass} ${classNm}`}>
+        Designed For <span style={{ color: 'red' }}>Safety</span>
+      </h2>
+    );
+  }
+
+  return <h2 className={`${basicClass} ${classNm}`}>{headerTxt}</h2>;
+};
 
 const SectionHeading = ({ headerTxt, infoTxt, classNm = '' }) => {
   return (
     <div className="section-heading">
-      {headerTxt.includes('Shielding') ? (
-        <ModifiedHeading classNm={classNm} />
-      ) : (
-        <h2 className={`section-heading__header ${classNm}`}>
-          {headerTxt}
-        </h2>
-      )}
-
+      <ModifiedHeading classNm={classNm} headerTxt={headerTxt} />
       {infoTxt && (
         <p className={`section-heading__intro ${classNm}`}>
           {infoTxt}

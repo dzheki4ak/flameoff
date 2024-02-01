@@ -1,6 +1,8 @@
 import FlameOffPaint from '@/public/images/flame_off_paint.svg';
 import FrClearPaint from '@/public/images/fr_clear_paint.svg';
 
+import links from './links';
+
 const productCardDetails = [
   {
     header: 'Fire Barrier Paint',
@@ -11,18 +13,17 @@ const productCardDetails = [
       'This product has been tested to international standards including ASTM and UL. Application is ideal for commercial, residential, and industrial projects',
     imgAltText: 'Fire Barrier Paint',
     rtl: false,
-    itemId: 'barrier_paint',
+    pageLink: links.fireBarrier,
   },
   {
     header: 'FR Clear',
     imageSrc: FrClearPaint,
     descrTextPrime:
       'A clear fire retardant coating/spray for wood, fabric, and other substrates. This fireproof solution is eco-friendly and water based, intended for interior use with easy application. Ideal use in schools, hospitals, hotels, and other public spaces, preventing flame spread and smoke development.',
-    descrTextSec:
-      'Classified and tested to ASTM and UL standards',
+    descrTextSec: 'Classified and tested to ASTM and UL standards',
     imgAltText: 'FR Clear',
     rtl: true,
-    itemId: 'fr_clear',
+    pageLink: links.frClear,
   },
 ];
 

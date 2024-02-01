@@ -67,9 +67,14 @@
   }
 }
 
-@media screen and (max-width: 730px) {
+@media screen and (max-width: 1121px) {
   .header {
     padding: 20px 16px 0;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .header {
     background-image: url('../../public/images/header_image_mob.svg');
     background-repeat: no-repeat;
     background-position: center;
