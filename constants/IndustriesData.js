@@ -12,7 +12,7 @@ export const industriesData = [
 ];
 
 export const designedForSafetyData = [
+  { image: Steel, altTxt: 'Steel surface' },
   { image: Gypsum, altTxt: 'Gypsum surface' },
   { image: Wood, altTxt: 'Wood surface' },
-  { image: Steel, altTxt: 'Steel surface' },
 ];

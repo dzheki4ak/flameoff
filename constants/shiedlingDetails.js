@@ -9,22 +9,30 @@ import Mixer from '@/public/images/shield_images/driller.svg';
 export const fbpShieldingDetails = [
   {
     icon: Shield,
-    text: 'Reliable and tested fire protection',
+    mainText: 'Reliable Lasting Fire Protection',
+    secText:
+      'Fire Barrier Paint offers 1-2 hour protection for your substrates against fires.',
     altTxt: 'shield',
   },
   {
     icon: Spark,
-    text: 'Aesthetically pleasing and easy to apply',
+    mainText: 'Easy and Aesthetically Pleasing',
+    secText:
+      'Providing a smooth eggshell finish that is easy to apply and clean up.',
     altTxt: 'spark',
   },
   {
     icon: Layers,
-    text: 'One product for three substrates',
+    mainText: 'One Product Across Substrates',
+    secText:
+      'The same coating can safeguard steel, drywall, and wood against fire.',
     altTxt: 'layers',
   },
   {
     icon: Recycling,
-    text: 'An environmentally friendly solution',
+    mainText: 'Environmentally Friendly Solution',
+    secText:
+      'This green solution is water-based and formulated at low VOCs.',
     altTxt: 'recycling',
   },
 ];

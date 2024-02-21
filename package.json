@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@fontsource/source-sans-pro": "^5.0.8",
     "eslint": "8.50.0",
     "eslint-config-next": "13.5.4",
     "next": "^14.0.5-canary.20",

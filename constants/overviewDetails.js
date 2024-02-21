@@ -9,6 +9,8 @@ export const fbpOverviewDet = [
   {
     image: SteelConstr,
     text: 'This innovative intumescent paint can be applied to many building materials including structural steel, sheet metal, sheetrock, composite panels, and interior woods. ',
+    text2part:
+      'Protecting multiple substrates from fire with intumescent paint is both affective and aesthetically pleasing. Fire Barrier Paint offers a solution that looks nice and is easy to use. Use a commercial paint sprayer to apply of this fire retardant paint.',
     altTxt: 'Steel Construction',
   },
   {
@@ -18,7 +20,9 @@ export const fbpOverviewDet = [
   },
   {
     image: GypsumInner,
-    text: 'To achieve the proper fire rating apply the coating to a specific dry film thickness (DFT) to fit the unique requirements of your substrate. To find this information please review our technical data sheets. The wet film thickness (WFT) can be applied at 15-45 mils depending on applicator experience and rating requirements. To achieve the recommended DFT we suggest applying additional coats at lesser amounts. Please contact our active technical sales support team to figure out the right DFT and coverage rates for your substrate.  ',
+    text: 'To achieve the proper fire rating apply the coating to a specific dry film thickness (DFT) to fit the unique requirements of your substrate. To find this information please review our technical data sheets. The wet film thickness (WFT) can be applied at 15-45 mils depending on applicator experience and rating requirements.',
+    text2part:
+      'To achieve the recommended DFT we suggest applying additional coats at lesser amounts. Please contact our active technical sales support team to figure out the right DFT and coverage rates for your substrate.',
     altTxt: 'Gypsum interrior',
   },
 ];

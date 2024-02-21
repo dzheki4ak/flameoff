@@ -1,9 +1,6 @@
-import { Source_Sans_3 } from 'next/font/google';
 import Header from '@/components/Header/Header';
 import Footer from '@/components/Footer/Footer';
 import './globals.scss';
-
-const pageFont = Source_Sans_3({ subsets: ['latin'] });
 
 export const metadata = {
   viewport: 'width=device-width,initial-scale=1.0',
@@ -19,7 +16,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={pageFont.className}>
+      <body>
         <Header />
         <main className="main">{children}</main>
         <Footer />

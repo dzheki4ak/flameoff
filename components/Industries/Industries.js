@@ -8,7 +8,7 @@ import './Industries.scss';
 const Industries = () => {
   return (
     <section className="industries">
-      <SectionHeading headerTxt={industriesDet.headerTxt} />
+      <SectionHeading {...industriesDet} />
       <div className="industries__images">
         {industriesData.map(data => (
             <Image

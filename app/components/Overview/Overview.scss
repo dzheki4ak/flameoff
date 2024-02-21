@@ -20,10 +20,14 @@
       &-image {
         max-width: 100%;
         width: 514px;
-        height: auto;
+        height: 300px;
       }
 
       &-text {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
         font-size: $f_s-18;
         font-weight: $light-font;
         margin: 0 48px;

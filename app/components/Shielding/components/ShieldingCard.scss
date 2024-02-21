@@ -3,24 +3,28 @@
 .shield-card {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding: 48px 39px;
-  gap: 16px 32px;
+  align-items: left;
+  padding: 16px 16px 32px;
+  gap: 16px;
   max-width: 265px;
-  width: 327px;
+  width: 262px;
   height: auto;
 
-
   &__image {
-    max-width: 80px;
-    width: 80px;
+    max-width: 40px;
+    width: 40px;
     height: auto;
   }
 
-  &__text {
-    color: #4e5d78;
+  &__text-main {
+    color: #354150;
     font-weight: $bold-font;
-    font-size: 24px;
-    text-align: center;
+    font-size: 22px;
+    text-align: start;
+  }
+
+  &__text-sec {
+    font-weight: $light-font;
+    font-size: $f_s-18;
   }
 }

@@ -4,11 +4,17 @@ import SectionHeading from '@/components/SectionHeading/SectionHeading';
 import Image from 'next/image';
 
 import './TechData.scss';
+import Button from '@/components/Button/Button';
 
-const TechData = ({ fbpTechHeadingData, fbpTechData }) => {
+const TechData = ({
+  fbpTechHeadingData,
+  fbpTechData1,
+  fbpTechData2,
+}) => {
   return (
     <section className="technical">
       <SectionHeading {...fbpTechHeadingData} />
+
       <div className="technical__listing">
         <h4 className="technical__listing_header">Listings</h4>
         <p className="technical__listing_text">
@@ -19,32 +25,64 @@ const TechData = ({ fbpTechHeadingData, fbpTechData }) => {
           accredited testing laboratories. Their unbiased results are
           the basis for our certification listings.
         </p>
-        <Link className="technical__listing_legend" href="#">
-          View Legend
-        </Link>
       </div>
-      <table className="technical__table t-table">
-        <tbody className="t-table__body">
-          <tr className="t-table__body_row">
-            <th>Agency Name</th>
-            <th>Report Number</th>
-            <th>Details</th>
-            <th>PDF</th>
-          </tr>
-          {fbpTechData.map(data => (
-            <tr className="t-table__body_row" key={data.reportN}>
-              <td>
-                <Image src={data.agency} alt={data.altTxt} />
-              </td>
-              <td>{data.reportN}</td>
-              <td>{data.details}</td>
-              <td>
-                <Image src={data.file} alt={data.altTxt} />
-              </td>
+      <div className="technical__tables">
+        <table
+          className="technical__tables_table t-table"
+          cellspacing="0"
+        >
+          <tbody className="t-table__body">
+            <tr className="t-table__body_row">
+              <th className="t-table__head file-cell">PDF</th>
+              <th className="t-table__head">Name</th>
             </tr>
-          ))}
-        </tbody>
-      </table>
+            {fbpTechData1.map(data => (
+              <tr className="t-table__body_row" key={data.reportN}>
+                <td className="t-table__data file-cell">
+                  <Image
+                    className="t-table__data_image"
+                    src={data.file}
+                    alt={data.altTxt}
+                  />
+                </td>
+                <td className="t-table__data">{data.reportName}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+        <table
+          className="technical__tables_table t-table"
+          cellspacing="0"
+        >
+          <tbody className="t-table__body">
+            <tr className="t-table__body_row mob-hide">
+              <th className="t-table__head file-cell">PDF</th>
+              <th className="t-table__head">Name</th>
+            </tr>
+            {fbpTechData2.map(data => (
+              <tr className="t-table__body_row" key={data.reportN}>
+                <td className="t-table__data file-cell">
+                  <Image
+                    className="t-table__data_image"
+                    src={data.file}
+                    alt={data.altTxt}
+                  />
+                </td>
+                <td className="t-table__data">{data.reportName}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+
+      <p className="technical__support">
+        Ensure proper application contact our support team with any
+        questions
+      </p>
+      <Button text="order now" classNm="technical__button" />
+      <Link className="technical__listing_legend" href="#">
+        Official website
+      </Link>
     </section>
   );
 };

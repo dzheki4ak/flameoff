@@ -12,7 +12,10 @@ import {
 import { designedForSafetyData } from '@/constants/IndustriesData';
 import { fbpShieldingDetails } from '@/constants/shiedlingDetails';
 import { fbpOverviewDet } from '@/constants/overviewDetails';
-import fbpTechDataDet from '@/constants/technicalTableData';
+import {
+  fbpTechTable1Det,
+  fbpTechTable2Det,
+} from '@/constants/technicalTableData';
 
 const FireBarrierPaint = () => {
   return (
@@ -31,7 +34,8 @@ const FireBarrierPaint = () => {
       />
       <TechData
         fbpTechHeadingData={productTechData}
-        fbpTechData={fbpTechDataDet}
+        fbpTechData1={fbpTechTable1Det}
+        fbpTechData2={fbpTechTable2Det}
       />
     </>
   );

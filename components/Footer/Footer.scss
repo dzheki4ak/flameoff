@@ -1,7 +1,6 @@
 @import '@/app/variables.scss';
 
 .footer {
-  margin-top: $section-top-margin;
   color: #ffffff;
 
   &__bottom {
@@ -181,7 +180,13 @@
             flex-direction: column;
             align-items: center;
           }
+
+          &_copyright {
+            text-align: center;
+          }
         }
+
+        
       }
     }
   }

@@ -2,6 +2,7 @@
 
 .technical {
   margin-top: $section-top-margin_page;
+  margin-bottom: $section-top-margin_page;
 
   &__listing {
     &_header {
@@ -23,6 +24,83 @@
       display: block;
       text-align: right;
       text-decoration: none;
+    }
+  }
+
+  &__tables {
+    display: flex;
+    flex-wrap: wrap;
+    &_table {
+      max-width: 100%;
+      width: 50%;
+      flex-grow: 1;
+    }
+  }
+
+  .t-table {
+    &__head,
+    &__data {
+      border: 0.5px solid #c5ced7;
+      padding: 10px 12px;
+      height: 67px;
+
+      &.file-cell {
+        text-align: center;
+        width: 100px;
+      }
+    }
+
+    &__data {
+      line-height: 23px;
+      font-size: $f_s-18;
+      font-weight: $light-font;
+      text-align: left;
+    }
+
+    &__head {
+      text-align: left;
+      font-weight: $bold-font;
+      font-size: 20px;
+      line-height: 25px;
+      background-color: #f2f6fa;
+    }
+  }
+
+  &__button {
+    display: block;
+    margin: 72px auto 0;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .technical {
+    &__listing {
+      &_legend,
+      &_header {
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .technical {
+    &__tables {
+      flex-direction: column;
+
+      &_table {
+        width: 100%;
+      }
+    }
+  }
+
+  .t-table {
+    &__body {
+      &_row {
+        &.mob-hide {
+          display: none;
+        }
+      }
     }
   }
 }

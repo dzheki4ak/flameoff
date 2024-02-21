@@ -1,74 +1,55 @@
-import Link from 'next/link';
-import ICC from '@/public/images/icons/tech_icons/es_icc.svg';
-import ULIQ from '@/public/images/icons/tech_icons/ul_iq.svg';
-import PDF from '@/public/images/icons/tech_icons/pdf_icon.svg';
+import PDF from '@/public/images/icons/pdf_icon.svg';
 
-const esl1191links = [
+ export const fbpTechTable1Det = [
   {
-    text: 'Wide Flange Steel;',
-    href: '',
+    file: PDF,
+    reportName: 'Product Brochure',
+    altTxt: 'PDF logo',
+    fileLink: '',
   },
   {
-    text: 'Hollow Steel;',
-    href: '',
+    file: PDF,
+    reportName: 'Applicator Field Operations',
+    altTxt: 'PDF logo',
+    fileLink: '',
   },
   {
-    text: 'Beams;',
-    href: '',
+    file: PDF,
+    reportName: 'Application Guide',
+    altTxt: 'PDF logo',
+    fileLink: '',
   },
   {
-    text: 'Gypsum',
-    href: '',
+    file: PDF,
+    reportName: 'Wood and Gypsum Submittal Specification',
+    altTxt: 'PDF logo',
+    fileLink: '',
   },
 ];
 
-const esl1191Details = links =>
-  links.map(link => (
-    <Link key={link.text} href={link.href}>
-      {link.text}
-    </Link>
-  ));
-
-const fbpTechDataDet = [
+export const fbpTechTable2Det = [
   {
-    agency: ICC,
-    reportN: 'ESL-1191',
-    details: esl1191Details(esl1191links),
     file: PDF,
-    fileLink: '',
-    altTxt: 'agency logo',
-  },
-  {
-    agency: ICC,
-    reportN: 'ESL-1192',
-    details: 'E-84 Class A',
-    file: PDF,
+    reportName: 'Safety Data Sheet',
+    altTxt: 'PDF logo',
     fileLink: '',
   },
   {
-    agency: ICC,
-    reportN: 'ESR-3874',
-    details: 'ICC-ES Evaluation Service Report',
     file: PDF,
+    reportName: 'Structural Steel Submittal Specification',
+    altTxt: 'PDF logo',
     fileLink: '',
   },
   {
-    agency: ULIQ,
-    reportN: 'CDWZ.R38327',
-    details:
-      'Fire-Resistance Ratings -ANSI/UL 263. Steel and Gypsum Report',
     file: PDF,
+    reportName: 'Certificate Of Compliance',
+    altTxt: 'PDF logo',
     fileLink: '',
   },
   {
-    agency: ULIQ,
-    reportN: 'CDWZ7.R38327',
-    details:
-      'Fire-Resistance Ratings CAN/ULC-S101 Certified for Canada. Steel and Gypsum Report',
     file: PDF,
+    reportName: 'Warranty',
+    altTxt: 'PDF logo',
     fileLink: '',
-    altTxt: 'PDF file icon',
   },
 ];
-
-export default fbpTechDataDet;
