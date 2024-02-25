@@ -1,8 +1,8 @@
 @import '@/app/variables.scss';
 
 .technical {
-  margin-top: $section-top-margin_page;
-  margin-bottom: $section-top-margin_page;
+  margin-top: $section-top-margin;
+  margin-bottom: $section-top-margin;
 
   &__listing {
     &_header {
@@ -17,19 +17,20 @@
     }
 
     &_legend {
-      font-size: $f_s-22;
+      font-size: 20px;
       font-weight: $bold-font;
       color: #b40404;
-      margin: 16px 0;
+      margin: 20px 0 0;
       display: block;
-      text-align: right;
-      text-decoration: none;
+      text-align: center;
+      text-decoration: underline;
     }
   }
 
   &__tables {
     display: flex;
     flex-wrap: wrap;
+    margin-top: 48px;
     &_table {
       max-width: 100%;
       width: 50%;
@@ -66,24 +67,20 @@
     }
   }
 
+  &__support {
+    text-align: center;
+    margin: 48px auto 24px;
+    color: #4e5d78;
+    font-style: 20px;
+  }
+
   &__button {
     display: block;
-    margin: 72px auto 0;
+    margin: 0 auto 0;
   }
 }
 
-@media screen and (max-width: 730px) {
-  .technical {
-    &__listing {
-      &_legend,
-      &_header {
-        text-align: center;
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 930px) {
   .technical {
     &__tables {
       flex-direction: column;
@@ -102,5 +99,22 @@
         }
       }
     }
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .technical {
+    &__listing {
+      &_header {
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 573px) {
+  .technical {
+    margin-top: $section-top-margin_mob;
+    margin-bottom: $section-top-margin_mob;
   }
 }

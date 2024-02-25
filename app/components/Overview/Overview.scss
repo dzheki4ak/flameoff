@@ -1,7 +1,7 @@
 @import '@/app/variables.scss';
 
 .overview {
-  margin-top: $section-top-margin_page;
+  margin-top: $section-top-margin;
 
   &__cards {
     display: flex;
@@ -53,6 +53,16 @@
           margin: 0;
         }
       }
+    }
+  }
+}
+
+@media screen and (max-width: 573px) {
+  .overview {
+    margin-top: $section-top-margin_mob;
+
+    &__cards {
+      gap: 27px;
     }
   }
 }

@@ -5,7 +5,7 @@ import { subscribe } from '@/constants/inputData';
 
 import './Subscribe.scss';
 
-const Subscribe = () => {
+const Subscribe = ({ btnClassNm }) => {
   return (
     <form
       className="subscribe"
@@ -13,7 +13,7 @@ const Subscribe = () => {
       method="POST"
     >
       <FormInput {...subscribe} />
-      <Button btnType="submit" text="subscribe" />
+      <Button btnType="submit" text="subscribe" classNm={btnClassNm}/>
     </form>
   );
 };

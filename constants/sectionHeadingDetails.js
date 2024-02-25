@@ -33,7 +33,7 @@ export const contactDet = {
   headerTxt: 'Contact',
   redText: 'Us',
   infoTxt:
-    'Achieve a proper fire rating with an easy-to-apply, cost effective and environmentally friendly FlameOFF® Fire Barrier Paint.',
+    'Achieve proper fire safety with easy-to-apply, cost-effective, fire-rated solutions',
   classNm: 'modified',
 };
 

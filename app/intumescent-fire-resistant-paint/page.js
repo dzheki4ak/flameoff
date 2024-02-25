@@ -2,7 +2,6 @@ import Safety from '../components/Safety/Safety';
 import Shielding from '../components/Shielding/Shielding';
 import Overview from '../components/Overview/Overview';
 import TechData from '../components/TechData/TechData';
-
 import {
   fbpDesignedForSafety,
   fbpShielding,

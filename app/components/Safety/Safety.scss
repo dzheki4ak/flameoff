@@ -3,3 +3,9 @@
   display: flex;
   flex-direction: column;
 }
+
+@media screen and (max-width: 573px) {
+  .safety {
+    margin-top: 196px;
+  }
+}

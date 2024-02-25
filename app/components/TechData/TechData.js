@@ -1,10 +1,8 @@
 import Link from 'next/link';
-import SectionHeading from '@/components/SectionHeading/SectionHeading';
-
 import Image from 'next/image';
-
-import './TechData.scss';
+import SectionHeading from '@/components/SectionHeading/SectionHeading';
 import Button from '@/components/Button/Button';
+import './TechData.scss';
 
 const TechData = ({
   fbpTechHeadingData,
@@ -39,11 +37,13 @@ const TechData = ({
             {fbpTechData1.map(data => (
               <tr className="t-table__body_row" key={data.reportN}>
                 <td className="t-table__data file-cell">
-                  <Image
-                    className="t-table__data_image"
-                    src={data.file}
-                    alt={data.altTxt}
-                  />
+                  <Link href={data.fileLink} target="_blank">
+                    <Image
+                      className="t-table__data_image"
+                      src={data.file}
+                      alt={data.altTxt}
+                    />
+                  </Link>
                 </td>
                 <td className="t-table__data">{data.reportName}</td>
               </tr>
@@ -62,11 +62,13 @@ const TechData = ({
             {fbpTechData2.map(data => (
               <tr className="t-table__body_row" key={data.reportN}>
                 <td className="t-table__data file-cell">
-                  <Image
-                    className="t-table__data_image"
-                    src={data.file}
-                    alt={data.altTxt}
-                  />
+                  <Link href={data.fileLink} target="_blank">
+                    <Image
+                      className="t-table__data_image"
+                      src={data.file}
+                      alt={data.altTxt}
+                    />
+                  </Link>
                 </td>
                 <td className="t-table__data">{data.reportName}</td>
               </tr>
@@ -80,7 +82,11 @@ const TechData = ({
         questions
       </p>
       <Button text="order now" classNm="technical__button" />
-      <Link className="technical__listing_legend" href="#">
+      <Link
+        className="technical__listing_legend"
+        href="https://flameoffcoatings.com"
+        target="_blank"
+      >
         Official website
       </Link>
     </section>

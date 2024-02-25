@@ -24,7 +24,7 @@ const ProductCard = ({
           {descrTextSec}
         </p>
         <Button
-          text="Read More"
+          text="Learn More"
           classNm="product-card__details_button"
           link={pageLink}
         />
@@ -35,7 +35,7 @@ const ProductCard = ({
         alt={imgAltText}
       />
       <Button
-        text="Read More"
+        text="Learn More"
         classNm="product-card__details_button-mob"
         link={pageLink}
       />
