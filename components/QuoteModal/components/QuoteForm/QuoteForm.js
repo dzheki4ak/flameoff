@@ -15,10 +15,10 @@ import './QuoteForm.scss';
 const QuoteForm = () => {
   const recaptchaRef = createRef();
 
-  const handleCaptchaChange = value => {
-    // Handle the reCAPTCHA value
-    // console.log('reCAPTCHA value:', value);
-  };
+  // const handleCaptchaChange = value => {
+  //   // Handle the reCAPTCHA value
+  //   // console.log('reCAPTCHA value:', value);
+  // };
 
   return (
     <form className="quote__form">
@@ -35,7 +35,7 @@ const QuoteForm = () => {
         className="quote__recaptcha"
         ref={recaptchaRef}
         sitekey="YOUR_RECAPTCHA_SITE_KEY"
-        onChange={handleCaptchaChange}
+        // onChange={handleCaptchaChange}
       />
       <Button classNm="quote__form_button" text="send" />
     </form>
