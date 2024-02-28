@@ -7,6 +7,7 @@ const FlameOffLogo = ({ classNm }) => {
   return (
     <Link href="/">
       <Image
+        loading="eager"
         className={classNm}
         src={classNm.includes('mob') ? LogoImgMob : LogoImg}
         alt="flameoff logo"

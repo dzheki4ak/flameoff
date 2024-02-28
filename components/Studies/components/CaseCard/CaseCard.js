@@ -6,6 +6,7 @@ const CaseCard = ({ imgSrc, altText, title, text }) => {
   return (
     <div className="studies-card">
       <Image
+        loading="eager"
         className="studies-card__image"
         src={imgSrc}
         alt={`${altText}`}

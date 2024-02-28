@@ -39,6 +39,7 @@ const TechData = ({
                 <td className="t-table__data file-cell">
                   <Link href={data.fileLink} target="_blank">
                     <Image
+                      loading="eager"
                       className="t-table__data_image"
                       src={data.file}
                       alt={data.altTxt}
@@ -64,6 +65,7 @@ const TechData = ({
                 <td className="t-table__data file-cell">
                   <Link href={data.fileLink} target="_blank">
                     <Image
+                      loading="eager"
                       className="t-table__data_image"
                       src={data.file}
                       alt={data.altTxt}

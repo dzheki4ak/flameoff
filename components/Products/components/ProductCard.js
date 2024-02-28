@@ -30,6 +30,7 @@ const ProductCard = ({
         />
       </div>
       <Image
+        loading="eager"
         className="product-card__image"
         src={imageSrc}
         alt={imgAltText}

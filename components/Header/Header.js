@@ -49,8 +49,9 @@ const Header = () => {
         />
         <HeaderContent btnClickFn={openModal} {...headerCont} />
 
-        {pathname !== '' && (
+        {pathname !== '' && pathname !== 'contact-us' && (
           <Image
+            loading="eager"
             className="header__content_image"
             src={headerCont.imageSrc}
             alt="product image"

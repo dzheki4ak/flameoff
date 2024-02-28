@@ -8,6 +8,7 @@ const SuccessForm = ({ closeFn }) => {
   return (
     <div className="success__form">
       <Image
+        loading="eager"
         className="success__form_icon"
         src={SuccessIcon}
         alt="green checkmark"

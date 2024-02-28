@@ -29,11 +29,11 @@ const Footer = () => (
             href="mailto:info@flameoffcoatings.com"
             target="_blank"
           >
-            <Image src={Letter} alt="letter icon" />
+            <Image loading="eager" src={Letter} alt="letter icon" />
             <p>info@flameoffcoatings.com</p>
           </Link>
           <div className="foot-cont__block_navbar-address">
-            <Image src={Location} alt="pin icon" />
+            <Image loading="eager" src={Location} alt="pin icon" />
             <p>3915 Beryl Rd, Suite 130, Raleigh, NC 27607</p>
           </div>
           <SocialMedia />
@@ -44,7 +44,7 @@ const Footer = () => (
             <p>
               Get our latest news, product updates and special offers!
             </p>
-            <Subscribe btnClassNm='foot-cont__block_subscribe-btn'/>
+            <Subscribe btnClassNm="foot-cont__block_subscribe-btn" />
           </div>
 
           <div className="foot-cont__block_app app-links">
@@ -55,6 +55,7 @@ const Footer = () => (
                 target="_blank"
               >
                 <Image
+                  loading="eager"
                   className="app-links__store_icon"
                   src={GooglePlay}
                   alt="google play icon"
@@ -65,6 +66,7 @@ const Footer = () => (
                 target="_blank"
               >
                 <Image
+                  loading="eager"
                   className="app-links__store_icon"
                   src={AppStore}
                   alt="app store icon"

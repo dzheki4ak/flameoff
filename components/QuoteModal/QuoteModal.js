@@ -27,6 +27,7 @@ const CustomModal = ({ modalIsOpen, closeModal }) => {
       style={customModalStyles}
     >
       <Image
+        loading="eager"
         className="modal__close_button"
         onClick={closeModal}
         src={CloseCross}

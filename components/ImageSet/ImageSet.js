@@ -7,6 +7,7 @@ const ImageSet = ({ imageData }) => {
     <div className="set__images">
       {imageData.map(data => (
         <Image
+          loading="eager"
           key={data.altTxt}
           className="set__images_image"
           src={data.image}

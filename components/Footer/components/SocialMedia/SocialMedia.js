@@ -15,6 +15,7 @@ const SocialMedia = () => {
           target="_blank"
         >
           <Image
+            loading="eager"
             className="social-media__link_icon"
             src={data.icon}
             alt={data.altTxt}

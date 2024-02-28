@@ -6,6 +6,7 @@ const BenefitsCard = ({ icon, title, text, altTxt }) => {
   return (
     <div className="benefit-card">
       <Image
+        loading="eager"
         className="benefit-card__image"
         src={icon}
         alt={altTxt}

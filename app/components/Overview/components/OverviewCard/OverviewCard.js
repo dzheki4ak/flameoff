@@ -4,6 +4,7 @@ const OverviewCard = ({ image, text, altTxt, text2part }) => {
   return (
     <div className="overview__cards_card">
       <Image
+        loading="eager"
         className="overview__cards_card-image"
         src={image}
         alt={altTxt}
