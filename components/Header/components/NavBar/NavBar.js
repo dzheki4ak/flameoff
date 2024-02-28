@@ -11,13 +11,11 @@ const NavBar = ({ btnClickFn, mobBtnClickFn }) => {
     <nav className="navbar">
       <FlameOffLogo classNm="navbar__logo" />
       <div className="navbar__links">
-        <Navlist
-          listData={navlist}
-          classNm="navbar__links_list"
-        />
+        <Navlist listData={navlist} classNm="navbar__links_list" />
         <Button clickFn={btnClickFn} text="Order now" />
       </div>
       <Image
+        loading="eager"
         className="navbar__menu"
         src={MobMenu}
         alt="navigation menu"

@@ -17,6 +17,7 @@ const MobileMenu = ({ mainBtnsFn, closeBtnFn, isMobMenuOpen }) => {
       <div className="mob-menu__head">
         <FlameOffLogo classNm="mob-menu__head_logo" />
         <Image
+          loading="eager"
           onClick={closeBtnFn}
           src={CloseCross}
           alt="close btn"

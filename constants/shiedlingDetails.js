@@ -3,8 +3,10 @@ import Spark from '@/public/images/shield_images/spark.svg';
 import Layers from '@/public/images/shield_images/layers.svg';
 import Recycling from '@/public/images/shield_images/recycling.svg';
 import Bucket from '@/public/images/shield_images/bucket.svg';
-import Spray from '@/public/images/shield_images/spray_gun.svg';
-import Mixer from '@/public/images/shield_images/driller.svg';
+import Like from '@/public/images/shield_images/like.svg';
+import Leaf from '@/public/images/shield_images/leaf.svg';
+import StarShield from '@/public/images/shield_images/star_shield.svg';
+
 
 export const fbpShieldingDetails = [
   {
@@ -39,23 +41,31 @@ export const fbpShieldingDetails = [
 
 export const frcShieldingDetails = [
   {
+    icon: StarShield,
+    mainText: 'Reliable Fire Retardant Treatment',
+    secText:
+      'A trustworthy product that will protect your substrates from flame spread and smoke development.',
+    altTxt: 'Shield',
+  },
+  {
+    icon: Like,
+    mainText: 'Maintain Substrate Aesthetic',
+    secText:
+      'This spray treatment is clear and therefore preserves the original integrity of a material.',
+    altTxt: 'Like',
+  },
+  {
     icon: Bucket,
-    text: '5 gallon pail',
-    altTxt: '5 gallon bucket',
+    mainText: 'One Product for Many Uses',
+    secText:
+      'FR Clear is compatible with many substrates including wood, fabric, leather, and other materials.',
+    altTxt: 'Bucket',
   },
   {
-    icon: Spray,
-    text: 'Commercial paint sprayer recommended',
-    altTxt: 'paint spray',
-  },
-  {
-    icon: Layers,
-    text: 'Can be sprayed up to 45 mils per coat',
-    altTxt: 'layers',
-  },
-  {
-    icon: Mixer,
-    text: 'Must be mixed with a drill mixer until product reaches a viscosity to spray',
-    altTxt: 'mixer',
+    icon: Leaf,
+    mainText: 'Environmentally Friendly Option',
+    secText:
+      'A water-based product that is safe to use and not harmful to the environment.',
+    altTxt: 'Leaf',
   },
 ];

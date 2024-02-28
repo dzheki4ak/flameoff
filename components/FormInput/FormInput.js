@@ -13,7 +13,7 @@ const FormInput = ({
   inputPlaceholder,
   inputId,
   inputPattern,
-  filesAccepted
+  filesAccepted,
 }) => {
   return (
     <div className={`input-area ${inputBG}`}>
@@ -25,6 +25,7 @@ const FormInput = ({
       <div className={`input-area__field ${inputBG}`}>
         {imgSrc && (
           <Image
+            loading="eager"
             className="input-area__field_icon"
             src={imgSrc}
             alt={imgAltTxt}

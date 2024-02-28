@@ -60,3 +60,22 @@ export const fbpTechTable2Det = [
     fileLink: 'https://flameoffcoatings.com/files/Warranty.pdf',
   },
 ];
+
+export const frcTechTable1Det = [
+  {
+    file: PDF,
+    reportName: 'Product Data Sheet',
+    altTxt: 'PDF logo',
+    fileLink:
+      'https://flameoffcoatings.com/files/FlameOFF-FR-Clear-Product-Data-Sheet.pdf',
+  },
+];
+export const frcTechTable2Det = [
+  {
+    file: PDF,
+    reportName: 'Safety Data Sheet',
+    altTxt: 'PDF logo',
+    fileLink:
+      'https://flameoffcoatings.com/files/FlameOFF-FR-Clear-Safety-Data-Sheet.pdf',
+  },
+];

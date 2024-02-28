@@ -1,8 +1,9 @@
 import SteelConstr from '@/public/images/overview_images/steel_construction.svg';
 import WoodConstr from '@/public/images/overview_images/wood_construction.svg';
 import GypsumInner from '@/public/images/overview_images/gypsum_walls.svg';
+
 import WoodInner from '@/public/images/overview_images/wood_inner.svg';
-import Rolls from '@/public/images/overview_images/rolls.svg';
+import LeatherFurniture from '@/public/images/overview_images/leather_furniture.svg';
 import Chair from '@/public/images/overview_images/chair.svg';
 
 export const fbpOverviewDet = [
@@ -27,20 +28,20 @@ export const fbpOverviewDet = [
   },
 ];
 
-export const fscOverviewDet = [
+export const frcOverviewDet = [
   {
     image: WoodInner,
-    text: 'FlameOFF® FR Clear is a fire retardant coating that is best applied to wooden surfaces and on other natural or synthetic materials. With FlameOFF® FR Clear, users can benefit from the safety of a fire-resistant coating, with a clear finish that allows materials to maintain their original colors, appearance, and durability.',
-    altTxt: 'Wood interrior',
-  },
-  {
-    image: Rolls,
-    text: 'This anti-fire technology protects wood and other materials but is also environmentally friendly and non-toxic. FlameOFF® FR Clear is effective in protecting construction materials from the spread of fire. It maintains the original properties of the materials used. It is water based, non toxic, and environmentally friendly. FlameOFF® FR Clear is odorless and lightweight and is easy to apply through spraying, dripping, or padding.',
-    altTxt: 'Rolls',
+    text: 'FR Clear, a fire retardant coating, compatible with wooden surfaces and various natural or synthetic fabrics. This innovative solution not only provides the safety of a fire-resistant coating but also ensures a transparent finish, preserving the original colors, appearance, and durability of materials for users to enjoy.',
+    altTxt: 'Wood and spray',
   },
   {
     image: Chair,
-    text: 'Prolong the life of structures made out of wood and other materials. Reduce fire danger on construction sites, and for long after projects are completed. Made for commercial, industrial, and residential uses for applicators, architects, building officials, general contractors, and others.',
+    text: 'Safeguarding wood and other materials, this anti-fire technology is eco-friendly and non-toxic. It is highly effective in preventing the spread of fire in construction materials. This water-based anti-fire solution preserves the original properties of materials while being odorless, lightweight, and easily applicable through spraying, dripping, or padding.',
+    altTxt: 'Rolls',
+  },
+  {
+    image: LeatherFurniture,
+    text: 'Extend the lifespan of structures crafted from wood and other materials. Minimize the fire risk of a construction project, ensuring lasting safety and building integrity well beyond project completion. Tailored for use in commercial, industrial, and residential settings by applicators, architects, building officials, general contractors, and more.',
     altTxt: 'Chair',
   },
 ];

@@ -66,6 +66,7 @@ export const frcShielding = {
   redText: 'Benefits',
   infoTxt:
     'Our fire retardant treatment, FR Clear, offers many benefits',
+  classNm: 'modified',
 };
 
 export const fbpOverview = {
@@ -81,6 +82,7 @@ export const frcOverview = {
   redText: 'Overview',
   infoTxt:
     'One spray, many surfaces: FR Clear is your fire retardant ally',
+  classNm: 'modified',
 };
 
 export const productTechData = {
