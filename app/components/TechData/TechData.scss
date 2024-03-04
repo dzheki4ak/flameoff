@@ -2,7 +2,6 @@
 
 .technical {
   margin-top: $section-top-margin;
-  margin-bottom: $section-top-margin;
 
   &__listing {
     &_header {
@@ -14,16 +13,6 @@
     &_text {
       font-size: $f_s-18;
       font-weight: $light-font;
-    }
-
-    &_legend {
-      font-size: 20px;
-      font-weight: $bold-font;
-      color: #b40404;
-      margin: 20px 0 0;
-      display: block;
-      text-align: center;
-      text-decoration: underline;
     }
   }
 
@@ -115,6 +104,5 @@
 @media screen and (max-width: 573px) {
   .technical {
     margin-top: $section-top-margin_mob;
-    margin-bottom: $section-top-margin_mob;
   }
 }

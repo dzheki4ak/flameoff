@@ -1,7 +1,10 @@
+'use client';
+import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import SectionHeading from '@/components/SectionHeading/SectionHeading';
 import Button from '@/components/Button/Button';
+import CustomModal from '@/components/QuoteModal/QuoteModal';
 import './TechData.scss';
 
 const TechData = ({
@@ -9,6 +12,16 @@ const TechData = ({
   fbpTechData1,
   fbpTechData2,
 }) => {
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+
+  const openModal = () => {
+    setModalIsOpen(true);
+  };
+
+  const closeModal = () => {
+    setModalIsOpen(false);
+  };
+
   return (
     <section className="technical">
       <SectionHeading {...fbpTechHeadingData} />
@@ -27,7 +40,7 @@ const TechData = ({
       <div className="technical__tables">
         <table
           className="technical__tables_table t-table"
-          cellspacing="0"
+          cellSpacing="0"
         >
           <tbody className="t-table__body">
             <tr className="t-table__body_row">
@@ -53,7 +66,7 @@ const TechData = ({
         </table>
         <table
           className="technical__tables_table t-table"
-          cellspacing="0"
+          cellSpacing="0"
         >
           <tbody className="t-table__body">
             <tr className="t-table__body_row mob-hide">
@@ -78,19 +91,19 @@ const TechData = ({
           </tbody>
         </table>
       </div>
-
       <p className="technical__support">
-        Ensure proper application contact our support team with any
-        questions
+        Achieve proper fire safety with easy-to-apply, cost-effective,
+        fire-rated solutions
       </p>
-      <Button text="order now" classNm="technical__button" />
-      <Link
-        className="technical__listing_legend"
-        href="https://flameoffcoatings.com"
-        target="_blank"
-      >
-        Official website
-      </Link>
+      <Button
+        clickFn={openModal}
+        text="order now"
+        classNm="technical__button"
+      />
+      <CustomModal
+        modalIsOpen={modalIsOpen}
+        closeModal={closeModal}
+      />
     </section>
   );
 };

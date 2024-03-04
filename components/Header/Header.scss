@@ -91,13 +91,28 @@
     background-position: center;
     background-size: cover;
 
+    &.intumescent-fire-resistant-paint,
+    &.fire-retardant-clear-spray {
+      height: 740px;
+
+      & .header__content {
+        align-items: center;
+        &_text {
+          margin: 0;
+        }
+
+        &_image {
+          margin-bottom: 0;
+        }
+      }
+    }
     &__text {
       &_main {
         font-size: 38px;
       }
       &_intro {
         font-size: $f_s-22;
-        margin-top: 24px;
+        margin: 24px 0 40px;
       }
     }
   }
