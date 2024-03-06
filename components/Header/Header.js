@@ -46,6 +46,7 @@ const Header = () => {
         <NavBar
           btnClickFn={openModal}
           mobBtnClickFn={mobMenuToggle}
+          pathname={pathname}
         />
         <HeaderContent btnClickFn={openModal} {...headerCont} />
 

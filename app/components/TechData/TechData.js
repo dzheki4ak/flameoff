@@ -48,7 +48,7 @@ const TechData = ({
               <th className="t-table__head">Name</th>
             </tr>
             {fbpTechData1.map(data => (
-              <tr className="t-table__body_row" key={data.reportN}>
+              <tr className="t-table__body_row" key={data.reportName}>
                 <td className="t-table__data file-cell">
                   <Link href={data.fileLink} target="_blank">
                     <Image
@@ -74,7 +74,7 @@ const TechData = ({
               <th className="t-table__head">Name</th>
             </tr>
             {fbpTechData2.map(data => (
-              <tr className="t-table__body_row" key={data.reportN}>
+              <tr className="t-table__body_row" key={data.reportName}>
                 <td className="t-table__data file-cell">
                   <Link href={data.fileLink} target="_blank">
                     <Image

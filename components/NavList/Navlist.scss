@@ -14,5 +14,12 @@
       text-decoration: none;
       color: #ffffff;
     }
+
+    &_underline {
+      height: 2px;
+      width: 32px;
+      background-color: #ffffff;
+      margin: 4px auto 0;
+    }
   }
 }
