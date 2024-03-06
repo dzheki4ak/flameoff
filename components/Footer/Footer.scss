@@ -2,7 +2,7 @@
 
 .footer {
   color: #ffffff;
-
+  margin-top: 144px;
   &__bottom {
     background: #29303c;
     padding-top: 40px;
@@ -147,6 +147,9 @@
         text-align: right;
       }
     }
+  }
+  &.contact-us-footer {
+    margin-top: 0;
   }
 }
 

@@ -6,12 +6,16 @@ import Image from 'next/image';
 import MobMenu from '@/public/images/icons/burger_menu.svg';
 import './NavBar.scss';
 
-const NavBar = ({ btnClickFn, mobBtnClickFn }) => {
+const NavBar = ({ btnClickFn, mobBtnClickFn, pathname }) => {
   return (
     <nav className="navbar">
       <FlameOffLogo classNm="navbar__logo" />
       <div className="navbar__links">
-        <Navlist listData={navlist} classNm="navbar__links_list" />
+        <Navlist
+          pathname={pathname}
+          listData={navlist}
+          classNm="navbar__links_list"
+        />
         <Button clickFn={btnClickFn} text="Order now" />
       </div>
       <Image
